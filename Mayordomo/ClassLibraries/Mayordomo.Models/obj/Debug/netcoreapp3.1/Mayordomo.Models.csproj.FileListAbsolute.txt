@@ -1,0 +1,7 @@
+C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.Models\bin\Debug\netcoreapp3.1\Mayordomo.Models.deps.json
+C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.Models\bin\Debug\netcoreapp3.1\Mayordomo.Models.dll
+C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.Models\bin\Debug\netcoreapp3.1\Mayordomo.Models.pdb
+C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.Models\obj\Debug\netcoreapp3.1\Mayordomo.Models.AssemblyInfoInputs.cache
+C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.Models\obj\Debug\netcoreapp3.1\Mayordomo.Models.AssemblyInfo.cs
+C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.Models\obj\Debug\netcoreapp3.1\Mayordomo.Models.dll
+C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.Models\obj\Debug\netcoreapp3.1\Mayordomo.Models.pdb
