@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayordomo.BussineLayer", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayordomo.ViewModels", "ClassLibraries\Mayordomo.ViewModels\Mayordomo.ViewModels.csproj", "{45F1EEF4-0AA8-4E0E-92B6-C8587C7BC9F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deno", "App\Deno\Deno.csproj", "{F747A57B-962B-4869-ACC5-318F00635E25}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,10 +45,6 @@ Global
 		{45F1EEF4-0AA8-4E0E-92B6-C8587C7BC9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45F1EEF4-0AA8-4E0E-92B6-C8587C7BC9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45F1EEF4-0AA8-4E0E-92B6-C8587C7BC9F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F747A57B-962B-4869-ACC5-318F00635E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F747A57B-962B-4869-ACC5-318F00635E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F747A57B-962B-4869-ACC5-318F00635E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F747A57B-962B-4869-ACC5-318F00635E25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,7 +55,6 @@ Global
 		{09E09F08-12A1-4829-BD37-15CC969CB911} = {D4435790-B4EA-4883-A0B0-33BFD2036030}
 		{2491B2A0-169C-44B7-925F-81A6E73522A3} = {D4435790-B4EA-4883-A0B0-33BFD2036030}
 		{45F1EEF4-0AA8-4E0E-92B6-C8587C7BC9F0} = {D4435790-B4EA-4883-A0B0-33BFD2036030}
-		{F747A57B-962B-4869-ACC5-318F00635E25} = {A1CD110D-E284-46D7-A3EF-5D4DEBEDD2E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0260435E-3866-465E-9AEE-A8716C66D14D}
