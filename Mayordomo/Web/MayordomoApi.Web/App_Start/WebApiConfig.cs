@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MayordomoApi.Web.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -13,7 +14,7 @@ namespace MayordomoApi.Web
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-
+            config.MessageHandlers.Add(new TokenValidationHandler());
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

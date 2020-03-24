@@ -1,6 +1,8 @@
 C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.ViewModels\bin\Debug\netcoreapp3.1\Mayordomo.ViewModels.deps.json
 C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.ViewModels\bin\Debug\netcoreapp3.1\Mayordomo.ViewModels.dll
 C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.ViewModels\bin\Debug\netcoreapp3.1\Mayordomo.ViewModels.pdb
+C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.ViewModels\obj\Debug\netcoreapp3.1\Mayordomo.ViewModels.csprojAssemblyReference.cache
+C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.ViewModels\obj\Debug\netcoreapp3.1\Mayordomo.ViewModels.csproj.CoreCompileInputs.cache
 C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.ViewModels\obj\Debug\netcoreapp3.1\Mayordomo.ViewModels.AssemblyInfoInputs.cache
 C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.ViewModels\obj\Debug\netcoreapp3.1\Mayordomo.ViewModels.AssemblyInfo.cs
 C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.ViewModels\obj\Debug\netcoreapp3.1\Mayordomo.ViewModels.dll
