@@ -2,12 +2,12 @@
 using System;
 using System.Configuration;
 using System.Security.Claims;
-
+using Mayordomo.ViewModels.Authenticate;
 namespace MayordomoApi.Web.Helpers
 {
     internal static class TokenGenerator
     {
-        public static string GenerateTokenJwt(string username, string rolname)
+        public static TokenRequest GenerateTokenJwt(string username, string rolname)
         {
             //TODO: appsetting for Demo JWT - protect correctly this settings
             var secretKey = ConfigurationManager.AppSettings["JWT_SECRET_KEY"];
@@ -32,13 +32,13 @@ namespace MayordomoApi.Web.Helpers
                 signingCredentials: signingCredentials);
 
             var jwtTokenString = tokenHandler.WriteToken(jwtSecurityToken);
-            //var token = new TokenRequest()
-            //{
-            return jwtTokenString;
-                //Date = DateTime.UtcNow,
-                //Expired = Convert.ToInt32(expireTime)
-            //};
-            //return token;
+            var token = new TokenRequest()
+            {
+                Token = jwtTokenString,
+                Date = DateTime.UtcNow,
+                Expired = Convert.ToInt32(expireTime)
+            };
+            return token;
         }
     }
 }
