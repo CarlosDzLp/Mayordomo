@@ -1,7 +1,0 @@
-C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.BussineLayer\bin\Debug\netcoreapp3.1\Mayordomo.BussineLayer.deps.json
-C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.BussineLayer\bin\Debug\netcoreapp3.1\Mayordomo.BussineLayer.dll
-C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.BussineLayer\bin\Debug\netcoreapp3.1\Mayordomo.BussineLayer.pdb
-C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.BussineLayer\obj\Debug\netcoreapp3.1\Mayordomo.BussineLayer.AssemblyInfoInputs.cache
-C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.BussineLayer\obj\Debug\netcoreapp3.1\Mayordomo.BussineLayer.AssemblyInfo.cs
-C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.BussineLayer\obj\Debug\netcoreapp3.1\Mayordomo.BussineLayer.dll
-C:\Mayordomo\Mayordomo\ClassLibraries\Mayordomo.BussineLayer\obj\Debug\netcoreapp3.1\Mayordomo.BussineLayer.pdb
