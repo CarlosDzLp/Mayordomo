@@ -17,13 +17,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mayordomo.App", "App\Mayord
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MayordomoApi.Web", "Web\MayordomoApi.Web\MayordomoApi.Web.csproj", "{22CE6900-924B-4B3F-8797-596989E7409F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayordomo.ViewModels", "ClassLibraries\Mayordomo.ViewModels\Mayordomo.ViewModels.csproj", "{6956B19A-1042-4E78-9FED-0DE379531C12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mayordomo.ViewModels", "ClassLibraries\Mayordomo.ViewModels\Mayordomo.ViewModels.csproj", "{6956B19A-1042-4E78-9FED-0DE379531C12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayordomo.Models", "ClassLibraries\Mayordomo.Models\Mayordomo.Models.csproj", "{31C3B7D1-E736-410A-B646-243ADFA35B17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mayordomo.Models", "ClassLibraries\Mayordomo.Models\Mayordomo.Models.csproj", "{31C3B7D1-E736-410A-B646-243ADFA35B17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayordomo.BussinesLayer", "ClassLibraries\Mayordomo.BussinesLayer\Mayordomo.BussinesLayer.csproj", "{6C41C3FC-C27F-416E-B4E5-287C94EFBABE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mayordomo.BussinesLayer", "ClassLibraries\Mayordomo.BussinesLayer\Mayordomo.BussinesLayer.csproj", "{6C41C3FC-C27F-416E-B4E5-287C94EFBABE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayordomo.DataAccess", "ClassLibraries\Mayordomo.DataAccess\Mayordomo.DataAccess.csproj", "{833579DD-2C2D-41F4-BD73-948D2575FA7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mayordomo.DataAccess", "ClassLibraries\Mayordomo.DataAccess\Mayordomo.DataAccess.csproj", "{833579DD-2C2D-41F4-BD73-948D2575FA7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppPlugin", "AppPlugin", "{701295FC-66EA-47B6-BA10-A538D102F9C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayordomo.App.Plugin.Android", "AppPlugin\Mayordomo.App.Plugin\Mayordomo.App.Plugin.Android\Mayordomo.App.Plugin.Android.csproj", "{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayordomo.App.Plugin.iOS", "AppPlugin\Mayordomo.App.Plugin\Mayordomo.App.Plugin.iOS\Mayordomo.App.Plugin.iOS.csproj", "{8A2230F9-2583-4362-BCE5-880029D67BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayordomo.App.Plugin", "AppPlugin\Mayordomo.App.Plugin\Mayordomo.App.Plugin\Mayordomo.App.Plugin.csproj", "{B6B2FD99-F42E-4379-B60C-828638BEA251}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +143,46 @@ Global
 		{833579DD-2C2D-41F4-BD73-948D2575FA7A}.Release|iPhone.Build.0 = Release|Any CPU
 		{833579DD-2C2D-41F4-BD73-948D2575FA7A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{833579DD-2C2D-41F4-BD73-948D2575FA7A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Debug|iPhone.Deploy.0 = Debug|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Release|iPhone.Build.0 = Release|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Release|iPhone.Deploy.0 = Release|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{8A2230F9-2583-4362-BCE5-880029D67BCF}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{8A2230F9-2583-4362-BCE5-880029D67BCF}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{8A2230F9-2583-4362-BCE5-880029D67BCF}.Debug|iPhone.Build.0 = Debug|iPhone
+		{8A2230F9-2583-4362-BCE5-880029D67BCF}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{8A2230F9-2583-4362-BCE5-880029D67BCF}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{8A2230F9-2583-4362-BCE5-880029D67BCF}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{8A2230F9-2583-4362-BCE5-880029D67BCF}.Release|iPhone.ActiveCfg = Release|iPhone
+		{8A2230F9-2583-4362-BCE5-880029D67BCF}.Release|iPhone.Build.0 = Release|iPhone
+		{8A2230F9-2583-4362-BCE5-880029D67BCF}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{8A2230F9-2583-4362-BCE5-880029D67BCF}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Release|iPhone.Build.0 = Release|Any CPU
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{B6B2FD99-F42E-4379-B60C-828638BEA251}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,6 +196,9 @@ Global
 		{31C3B7D1-E736-410A-B646-243ADFA35B17} = {D4435790-B4EA-4883-A0B0-33BFD2036030}
 		{6C41C3FC-C27F-416E-B4E5-287C94EFBABE} = {D4435790-B4EA-4883-A0B0-33BFD2036030}
 		{833579DD-2C2D-41F4-BD73-948D2575FA7A} = {D4435790-B4EA-4883-A0B0-33BFD2036030}
+		{7414428E-F4DE-4C38-9AC1-6BB64BD1DAF2} = {701295FC-66EA-47B6-BA10-A538D102F9C1}
+		{8A2230F9-2583-4362-BCE5-880029D67BCF} = {701295FC-66EA-47B6-BA10-A538D102F9C1}
+		{B6B2FD99-F42E-4379-B60C-828638BEA251} = {701295FC-66EA-47B6-BA10-A538D102F9C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0260435E-3866-465E-9AEE-A8716C66D14D}

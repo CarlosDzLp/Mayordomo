@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "Plugin.WowzaClient/0.3.0-beta": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Wowza": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid81/Plugin.WowzaClient.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid81/Plugin.WowzaClient.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -752,6 +767,15 @@
           "build/monoandroid90/Xamarin.Android.Support.ViewPager.targets": {}
         }
       },
+      "Xamarin.Android.Wowza/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid80/WowzaDroidSDK.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid80/WowzaDroidSDK.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.3.1": {
         "type": "package",
         "dependencies": {
@@ -804,6 +828,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Plugin.WowzaClient": "0.3.0-beta",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.908675"
         },
@@ -817,6 +842,25 @@
     }
   },
   "libraries": {
+    "Plugin.WowzaClient/0.3.0-beta": {
+      "sha512": "Kgna9ZdwLbSCNlOvH1DYSrAsGuQlHSWy0h4yXOlMX/glv2DZhNODhH2La4ygc71S0dfNfpo9bw95C7jUfnH7fw==",
+      "type": "package",
+      "path": "plugin.wowzaclient/0.3.0-beta",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid81/Plugin.WowzaClient.dll",
+        "lib/monoandroid81/Plugin.WowzaClient.xml",
+        "lib/netstandard1.0/Plugin.WowzaClient.dll",
+        "lib/netstandard1.0/Plugin.WowzaClient.xml",
+        "lib/netstandard2.0/Plugin.WowzaClient.dll",
+        "lib/netstandard2.0/Plugin.WowzaClient.xml",
+        "lib/xamarinios10/Plugin.WowzaClient.dll",
+        "lib/xamarinios10/Plugin.WowzaClient.xml",
+        "plugin.wowzaclient.0.3.0-beta.nupkg.sha512",
+        "plugin.wowzaclient.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -1618,6 +1662,19 @@
         "xamarin.android.support.viewpager.nuspec"
       ]
     },
+    "Xamarin.Android.Wowza/1.0.0": {
+      "sha512": "zRFa1u70bHvfr1ZHw4ZuUFbwNpapihqCr+BubUc2HOcZQINvDFg0H0HIgSDROiwf2N34sPJGi5i/H6FpPhRuhQ==",
+      "type": "package",
+      "path": "xamarin.android.wowza/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid80/WowzaDroidSDK.dll",
+        "lib/MonoAndroid80/WowzaDroidSDK.pdb",
+        "xamarin.android.wowza.1.0.0.nupkg.sha512",
+        "xamarin.android.wowza.nuspec"
+      ]
+    },
     "Xamarin.Essentials/1.3.1": {
       "sha512": "+51728AdZ/qtABGvcIaNXgEoL2jAtxAXLHS8PvGCP0pb6n7twBqYpfgkmwHYVgu+U99szgtL+Jot8L+OXorPcA==",
       "type": "package",
@@ -1927,6 +1984,7 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
       "Mayordomo.App >= 1.0.0",
+      "Plugin.WowzaClient >= 0.3.0-beta",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.3.0.908675"
     ]
@@ -1973,6 +2031,10 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "Plugin.WowzaClient": {
+            "target": "Package",
+            "version": "[0.3.0-beta, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.3.1, )"

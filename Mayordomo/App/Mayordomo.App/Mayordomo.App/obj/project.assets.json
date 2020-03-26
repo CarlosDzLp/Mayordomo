@@ -26,6 +26,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Plugin.WowzaClient/0.3.0-beta": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Plugin.WowzaClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.WowzaClient.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -209,6 +218,25 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Plugin.WowzaClient/0.3.0-beta": {
+      "sha512": "Kgna9ZdwLbSCNlOvH1DYSrAsGuQlHSWy0h4yXOlMX/glv2DZhNODhH2La4ygc71S0dfNfpo9bw95C7jUfnH7fw==",
+      "type": "package",
+      "path": "plugin.wowzaclient/0.3.0-beta",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid81/Plugin.WowzaClient.dll",
+        "lib/monoandroid81/Plugin.WowzaClient.xml",
+        "lib/netstandard1.0/Plugin.WowzaClient.dll",
+        "lib/netstandard1.0/Plugin.WowzaClient.xml",
+        "lib/netstandard2.0/Plugin.WowzaClient.dll",
+        "lib/netstandard2.0/Plugin.WowzaClient.xml",
+        "lib/xamarinios10/Plugin.WowzaClient.dll",
+        "lib/xamarinios10/Plugin.WowzaClient.xml",
+        "plugin.wowzaclient.0.3.0-beta.nupkg.sha512",
+        "plugin.wowzaclient.nuspec"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -562,6 +590,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "Plugin.WowzaClient >= 0.3.0-beta",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.3.0.908675"
     ]
@@ -613,6 +642,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Plugin.WowzaClient": {
+            "target": "Package",
+            "version": "[0.3.0-beta, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
