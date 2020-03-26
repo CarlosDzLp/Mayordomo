@@ -1,0 +1,7 @@
+C:\Mayordomo\Mayordomo\AppPlugin\Mayordomo.App.Plugin\Mayordomo.App.Plugin\bin\Debug\netstandard2.0\Mayordomo.App.Plugin.deps.json
+C:\Mayordomo\Mayordomo\AppPlugin\Mayordomo.App.Plugin\Mayordomo.App.Plugin\bin\Debug\netstandard2.0\Mayordomo.App.Plugin.dll
+C:\Mayordomo\Mayordomo\AppPlugin\Mayordomo.App.Plugin\Mayordomo.App.Plugin\obj\Debug\netstandard2.0\Mayordomo.App.Plugin.csprojAssemblyReference.cache
+C:\Mayordomo\Mayordomo\AppPlugin\Mayordomo.App.Plugin\Mayordomo.App.Plugin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Mayordomo\Mayordomo\AppPlugin\Mayordomo.App.Plugin\Mayordomo.App.Plugin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Mayordomo\Mayordomo\AppPlugin\Mayordomo.App.Plugin\Mayordomo.App.Plugin\obj\Debug\netstandard2.0\Mayordomo.App.Plugin.AssemblyInfoInputs.cache
+C:\Mayordomo\Mayordomo\AppPlugin\Mayordomo.App.Plugin\Mayordomo.App.Plugin\obj\Debug\netstandard2.0\Mayordomo.App.Plugin.AssemblyInfo.cs

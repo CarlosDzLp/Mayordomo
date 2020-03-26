@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "yvHrpivG3qbjRJO/9dOXjUufbj+RSNxGwtBNt5a5Cx+d2doLsZ67SXko4qYijZ6jL/Pu89llHuiPc2770pIBGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Mayordomo\\Mayordomo\\App\\Mayordomo.App\\Mayordomo.App.iOS\\Mayordomo.App.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\plugin.wowzaclient\\0.3.0-beta\\plugin.wowzaclient.0.3.0-beta.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.forms\\4.3.0.908675\\xamarin.forms.4.3.0.908675.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.ios.wowza\\1.0.0\\xamarin.ios.wowza.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

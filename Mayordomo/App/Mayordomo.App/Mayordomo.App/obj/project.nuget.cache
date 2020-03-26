@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "qW6RddQpYP6rha9OIrJT+z4C826iOJtkTjG8uzfXXHcSmsuLlfqtXCL3nyH6LsllZsU+ewz86ujGIxP51cu8mw==",
+  "success": true,
+  "projectFilePath": "C:\\Mayordomo\\Mayordomo\\App\\Mayordomo.App\\Mayordomo.App\\Mayordomo.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\plugin.wowzaclient\\0.3.0-beta\\plugin.wowzaclient.0.3.0-beta.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.forms\\4.3.0.908675\\xamarin.forms.4.3.0.908675.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,7 @@
+C:\Mayordomo\Mayordomo\App\Mayordomo.App\Mayordomo.App\bin\Debug\netstandard2.0\Mayordomo.App.deps.json
+C:\Mayordomo\Mayordomo\App\Mayordomo.App\Mayordomo.App\bin\Debug\netstandard2.0\Mayordomo.App.dll
+C:\Mayordomo\Mayordomo\App\Mayordomo.App\Mayordomo.App\obj\Debug\netstandard2.0\Mayordomo.App.csprojAssemblyReference.cache
+C:\Mayordomo\Mayordomo\App\Mayordomo.App\Mayordomo.App\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Mayordomo\Mayordomo\App\Mayordomo.App\Mayordomo.App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Mayordomo\Mayordomo\App\Mayordomo.App\Mayordomo.App\obj\Debug\netstandard2.0\Mayordomo.App.AssemblyInfoInputs.cache
+C:\Mayordomo\Mayordomo\App\Mayordomo.App\Mayordomo.App\obj\Debug\netstandard2.0\Mayordomo.App.AssemblyInfo.cs
