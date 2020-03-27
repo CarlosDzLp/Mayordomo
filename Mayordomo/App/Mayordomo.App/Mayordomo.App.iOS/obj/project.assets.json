@@ -1136,39 +1136,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/carlosdiaz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mayordomo\\Mayordomo\\App\\Mayordomo.App\\Mayordomo.App.iOS\\Mayordomo.App.iOS.csproj",
+      "projectUniqueName": "/Users/carlosdiaz/Mayordomo/Mayordomo/App/Mayordomo.App/Mayordomo.App.iOS/Mayordomo.App.iOS.csproj",
       "projectName": "Mayordomo.App.iOS",
-      "projectPath": "C:\\Mayordomo\\Mayordomo\\App\\Mayordomo.App\\Mayordomo.App.iOS\\Mayordomo.App.iOS.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Mayordomo\\Mayordomo\\App\\Mayordomo.App\\Mayordomo.App.iOS\\obj\\",
+      "projectPath": "/Users/carlosdiaz/Mayordomo/Mayordomo/App/Mayordomo.App/Mayordomo.App.iOS/Mayordomo.App.iOS.csproj",
+      "packagesPath": "/Users/carlosdiaz/.nuget/packages/",
+      "outputPath": "/Users/carlosdiaz/Mayordomo/Mayordomo/App/Mayordomo.App/Mayordomo.App.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/carlosdiaz/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Mayordomo\\Mayordomo\\App\\Mayordomo.App\\Mayordomo.App\\Mayordomo.App.csproj": {
-              "projectPath": "C:\\Mayordomo\\Mayordomo\\App\\Mayordomo.App\\Mayordomo.App\\Mayordomo.App.csproj"
+            "/Users/carlosdiaz/Mayordomo/Mayordomo/App/Mayordomo.App/Mayordomo.App/Mayordomo.App.csproj": {
+              "projectPath": "/Users/carlosdiaz/Mayordomo/Mayordomo/App/Mayordomo.App/Mayordomo.App/Mayordomo.App.csproj"
             }
           }
         }

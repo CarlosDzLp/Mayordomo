@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -94,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mayordomo.App.Plugin\Mayordomo.App.Plugin.csproj">
-      <Project>{F03709D8-2959-4F82-BECC-64134BB034B1}</Project>
+      <Project>{B6B2FD99-F42E-4379-B60C-828638BEA251}</Project>
       <Name>Mayordomo.App.Plugin</Name>
     </ProjectReference>
   </ItemGroup>
