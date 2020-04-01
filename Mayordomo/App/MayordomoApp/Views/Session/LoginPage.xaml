@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MayordomoApp.Views.Session.LoginPage"
+    NavigationPage.HasNavigationBar="False"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:controls="clr-namespace:MayordomoApp.Controls"
+    ios:Page.UseSafeArea="True"
+    BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackLayout
+                    Margin="0,40,40,0"
+                    Spacing="20"
+                    Grid.Row="0"
+                    Orientation="Horizontal"
+                    HorizontalOptions="End">
+                    <StackLayout>
+                        <Label
+                            Text="Iniciar Sesion"
+                            TextColor="Black"/>
+                        <BoxView
+                            IsVisible="{Binding IsVisibleLogIn}"
+                            Color="Black"
+                            HeightRequest="2"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapLogInCommand}"/>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label
+                            Text="Registrate"
+                            TextColor="Black"/>
+                        <BoxView
+                            Color="Black"
+                            IsVisible="{Binding IsVisibleRegister}"
+                            HeightRequest="2"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapRegisterCommand}"/>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="1"
+                    IsVisible="{Binding IsLogIn}">
+                    <StackLayout
+                        Padding="30,10"
+                        Spacing="20"
+                        VerticalOptions="CenterAndExpand">
+                        <Label
+                            Margin="0,0,0,0"
+                            Text="BIENVENIDO"
+                            TextColor="Black"
+                            TextDecorations="Underline"
+                            FontSize="45"/>
+                        <Label
+                            Margin="0,0,0,20"
+                            Text="Inicia Sesion"
+                            TextColor="Black"
+                            TextDecorations="Underline"
+                            FontSize="25"/>
+                        <StackLayout>
+                            <controls:CanvasView
+                                Padding="5,10"
+                                CornerRadius="10"
+                                Elevation="2"
+                                BackgroundColor="#F1F0F5">
+                                <Entry
+                                    Placeholder="Usuario"
+                                    PlaceholderColor="Gray"/>
+                            </controls:CanvasView>
+                        </StackLayout>
+                        <StackLayout>
+                            <controls:CanvasView
+                                Padding="5,10"
+                                Elevation="2"
+                                CornerRadius="10"
+                                BackgroundColor="#F1F0F5">
+                                <Entry
+                                    Placeholder="Contraseña"
+                                    PlaceholderColor="Gray"/>
+                            </controls:CanvasView>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="1"
+                    IsVisible="{Binding IsRegister}">
+                    <StackLayout
+                        Padding="30,0"
+                        Spacing="20"
+                        VerticalOptions="CenterAndExpand">
+                        <Label
+                            Margin="0,0,0,0"
+                            Text="BIENVENIDO"
+                            TextColor="Black"
+                            TextDecorations="Underline"
+                            FontSize="45"/>
+                        <Label
+                            Margin="0,0,0,20"
+                            Text="Registrate"
+                            TextColor="Black"
+                            TextDecorations="Underline"
+                            FontSize="25"/>
+                        
+                        <StackLayout>
+                            <controls:CanvasView
+                                Padding="5,10"
+                                CornerRadius="10"
+                                Elevation="2"
+                                BackgroundColor="#F1F0F5">
+                                <Entry
+                                    Placeholder="Nombres"
+                                    PlaceholderColor="Gray"/>
+                            </controls:CanvasView>
+                        </StackLayout>
+                        <StackLayout>
+                            <controls:CanvasView
+                                Padding="5,10"
+                                CornerRadius="10"
+                                Elevation="2"
+                                BackgroundColor="#F1F0F5">
+                                <Entry
+                                    Placeholder="Apellidos"
+                                    PlaceholderColor="Gray"/>
+                            </controls:CanvasView>
+                        </StackLayout>
+                        <StackLayout>
+                            <controls:CanvasView
+                                Padding="5,10"
+                                CornerRadius="10"
+                                Elevation="2"
+                                BackgroundColor="#F1F0F5">
+                                <Entry
+                                    Placeholder="Usuario"
+                                    PlaceholderColor="Gray"/>
+                            </controls:CanvasView>
+                        </StackLayout>
+                        <StackLayout>
+                            <controls:CanvasView
+                                Padding="5,10"
+                                CornerRadius="10"
+                                Elevation="2"
+                                BackgroundColor="#F1F0F5">
+                                <Entry
+                                    Placeholder="Contraseña"
+                                    PlaceholderColor="Gray"/>
+                            </controls:CanvasView>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout
+                    Padding="0,20"
+                    Grid.Row="2"
+                    BackgroundColor="#F1F0F5"
+                    IsVisible="{Binding IsLogIn}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label
+                            VerticalOptions="Center"
+                            Margin="20,0,30,0"
+                            Grid.Column="0"
+                            Text="Olvido Contraseña"
+                            TextColor="Black"
+                            TextDecorations="Underline"
+                            FontSize="Large"/>
+                        <controls:CanvasView
+                            Margin="0,0,30,0"
+                            Padding="15,20"
+                            CornerRadius="10"
+                            BackgroundColor="#EB96B7"
+                            Grid.Column="1">
+                            <controls:CanvasView.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LogInCommand}"/>
+                            </controls:CanvasView.GestureRecognizers>
+                            <Label
+                                Text="Iniciar"
+                                TextColor="White"/>
+                        </controls:CanvasView>
+                    </Grid>
+                </StackLayout>
+                <StackLayout
+                    Padding="0,20"
+                    Grid.Row="2"
+                    BackgroundColor="#F1F0F5"
+                    IsVisible="{Binding IsRegister}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label
+                            VerticalOptions="Center"
+                            Margin="20,0,30,0"
+                            Grid.Column="0"
+                            Text="Olvido Contraseña"
+                            TextColor="Black"
+                            TextDecorations="Underline"
+                            FontSize="Large"/>
+                        <controls:CanvasView
+                            Margin="0,0,30,0"
+                            Padding="15,20"
+                            CornerRadius="10"
+                            BackgroundColor="#7AC9ED"
+                            Grid.Column="1">
+                            <controls:CanvasView.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding RegisterCommand}"/>
+                            </controls:CanvasView.GestureRecognizers>
+                            <Label
+                                Text="Registrate"
+                                TextColor="White"/>
+                        </controls:CanvasView>
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
