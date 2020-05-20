@@ -3,14 +3,15 @@ using Xamarin.Forms;
 using System.Threading.Tasks;
 using MayordomoApp.Droid.Helpers;
 using MayordomoApp.Helpers;
+using MayordomoApp.DataBase;
 
 [assembly: Dependency(typeof(PathString))]
 namespace MayordomoApp.Droid.Helpers
 {
-	public class PathString : IPath
+	public class PathString : IPathBase
 	{
-		public string FilePath()
-		{
+        public string PathFile()
+        {
 			try
 			{
 				var path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
@@ -21,5 +22,5 @@ namespace MayordomoApp.Droid.Helpers
 				return null;
 			}
 		}
-	}
+    }
 }

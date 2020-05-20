@@ -4,13 +4,14 @@ using System.Threading.Tasks;
 using System.IO;
 using MayordomoApp.iOS.Helpers;
 using MayordomoApp.Helpers;
+using MayordomoApp.DataBase;
 
 [assembly: Dependency(typeof(PathString))]
 namespace MayordomoApp.iOS.Helpers
 {
-    public class PathString : IPath
+    public class PathString : IPathBase
     {
-        public string FilePath()
+        public string PathFile()
         {
             try
             {

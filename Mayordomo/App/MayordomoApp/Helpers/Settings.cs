@@ -1,8 +1,8 @@
 ﻿using System;
 namespace MayordomoApp.Helpers
 {
-    public interface IPath
+    public class Settings
     {
-        string FilePath();
+        public const string URL = "";
     }
 }

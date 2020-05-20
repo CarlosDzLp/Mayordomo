@@ -2,7 +2,9 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using MayordomoApp.Helpers;
+using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 
 namespace MayordomoApp.ViewModels.Base
@@ -24,6 +26,19 @@ namespace MayordomoApp.ViewModels.Base
         public BindableBase()
         {
             dial = DependencyService.Get<IDialogs>();
+            AddVideoCallCommand = new Command(AddVideoCallCommandExecuted);
+        }
+        #endregion
+
+
+        #region Command
+        public ICommand AddVideoCallCommand { get; set; }
+        #endregion
+
+        #region CommandExecuted
+        private void AddVideoCallCommandExecuted()
+        {
+            //PopupNavigation.Instance.PushAsync(new Views.Principal.Popup.CreateSessionViewCallPopup());
         }
         #endregion
 

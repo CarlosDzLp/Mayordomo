@@ -9,7 +9,8 @@ using Android.OS;
 using Plugin.CurrentActivity;
 using FormsToolkit;
 using MayordomoApp.Helpers;
-using MediaManager;
+using Android.Support.V4.App;
+using Android;
 
 namespace MayordomoApp.Droid
 {
@@ -25,8 +26,7 @@ namespace MayordomoApp.Droid
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            CrossMediaManager.Current.Init(this);
-            //CrossMediaManager.Current.(this);
+            Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             LoadApplication(new App());
             MessagingService.Current.Subscribe<MessageKeys>("StatusBar", (args, sender) =>
             {
@@ -59,6 +59,36 @@ namespace MayordomoApp.Droid
             newUiVisibility &= ~(int)Android.Views.SystemUiFlags.LightStatusBar;
             activity.Window.DecorView.SystemUiVisibility = (Android.Views.StatusBarVisibility)newUiVisibility;
             activity.Window.SetStatusBarColor(Android.Graphics.Color.ParseColor(colorHex));
+        }
+
+
+        private void GetPermissions()
+        {
+            try
+            {
+                ActivityCompat.RequestPermissions(this, new string[]
+                {
+                    Manifest.Permission.Camera,
+                    Manifest.Permission.ReadExternalStorage,
+                    Manifest.Permission.WriteExternalStorage,
+                }, 0);
+            }
+            catch
+            {
+
+            }
+        }
+
+        public override void OnBackPressed()
+        {
+            if (Rg.Plugins.Popup.Popup.SendBackPressed(base.OnBackPressed))
+            {
+                //Debug.WriteLine("Android back button: There are some pages in the PopupStack");
+            }
+            else
+            {
+                //Debug.WriteLine("Android back button: There are not any pages in the PopupStack");
+            }
         }
     }
 }

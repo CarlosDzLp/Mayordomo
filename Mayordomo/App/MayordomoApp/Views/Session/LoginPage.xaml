@@ -6,223 +6,113 @@
     NavigationPage.HasNavigationBar="False"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:controls="clr-namespace:MayordomoApp.Controls"
+    xmlns:fontawesome="clr-namespace:MayordomoApp.Fonts"
     ios:Page.UseSafeArea="True"
     BackgroundColor="White">
     <ContentPage.Content>
-        <ScrollView VerticalScrollBarVisibility="Never">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
+        <ScrollView
+            VerticalScrollBarVisibility="Never">
+            <StackLayout>
                 <StackLayout
-                    Margin="0,40,40,0"
-                    Spacing="20"
-                    Grid.Row="0"
-                    Orientation="Horizontal"
-                    HorizontalOptions="End">
-                    <StackLayout>
-                        <Label
-                            Text="Iniciar Sesion"
-                            TextColor="Black"/>
-                        <BoxView
-                            IsVisible="{Binding IsVisibleLogIn}"
-                            Color="Black"
-                            HeightRequest="2"/>
-                        <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding TapLogInCommand}"/>
-                        </StackLayout.GestureRecognizers>
-                    </StackLayout>
-                    <StackLayout>
-                        <Label
-                            Text="Registrate"
-                            TextColor="Black"/>
-                        <BoxView
-                            Color="Black"
-                            IsVisible="{Binding IsVisibleRegister}"
-                            HeightRequest="2"/>
-                        <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding TapRegisterCommand}"/>
-                        </StackLayout.GestureRecognizers>
-                    </StackLayout>
-                </StackLayout>
-                <StackLayout
-                    Grid.Row="1"
-                    IsVisible="{Binding IsLogIn}">
-                    <StackLayout
-                        Padding="30,10"
-                        Spacing="20"
-                        VerticalOptions="CenterAndExpand">
-                        <Label
-                            Margin="0,0,0,0"
-                            Text="BIENVENIDO"
-                            TextColor="Black"
-                            TextDecorations="Underline"
-                            FontSize="45"/>
-                        <Label
-                            Margin="0,0,0,20"
-                            Text="Inicia Sesion"
-                            TextColor="Black"
-                            TextDecorations="Underline"
-                            FontSize="25"/>
-                        <StackLayout>
-                            <controls:CanvasView
-                                Padding="5,10"
-                                CornerRadius="10"
-                                Elevation="2"
-                                BackgroundColor="#F1F0F5">
-                                <Entry
-                                    Placeholder="Usuario"
-                                    PlaceholderColor="Gray"/>
-                            </controls:CanvasView>
-                        </StackLayout>
-                        <StackLayout>
-                            <controls:CanvasView
-                                Padding="5,10"
-                                Elevation="2"
-                                CornerRadius="10"
-                                BackgroundColor="#F1F0F5">
-                                <Entry
-                                    Placeholder="Contraseña"
-                                    PlaceholderColor="Gray"/>
-                            </controls:CanvasView>
-                        </StackLayout>
-                    </StackLayout>
-                </StackLayout>
-                <StackLayout
-                    Grid.Row="1"
-                    IsVisible="{Binding IsRegister}">
-                    <StackLayout
-                        Padding="30,0"
-                        Spacing="20"
-                        VerticalOptions="CenterAndExpand">
-                        <Label
-                            Margin="0,0,0,0"
-                            Text="BIENVENIDO"
-                            TextColor="Black"
-                            TextDecorations="Underline"
-                            FontSize="45"/>
-                        <Label
-                            Margin="0,0,0,20"
-                            Text="Registrate"
-                            TextColor="Black"
-                            TextDecorations="Underline"
-                            FontSize="25"/>
+                    Spacing="15"
+                    Padding="30,0"
+                    VerticalOptions="CenterAndExpand">
+                    <Image
+                        HeightRequest="150"
+                        Margin="20,0,20,40"
+                        Source="MAYORDOMO"/>
+                    <controls:CanvasView
+                        CornerRadius="4"
+                        BackgroundColor="#EDEDED">
+                        <controls:CanvasView.Padding>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <On Platform="Android" Value="10,0"/>
+                                <On Platform="iOS" Value="10,15"/>
+                            </OnPlatform>
+                        </controls:CanvasView.Padding>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label
+                                TextColor="#1C2E29"
+                                VerticalOptions="Center"
+                                Grid.Column="0"
+                                Text="{x:Static fontawesome:FontAwesome.User}"
+                                FontFamily="{StaticResource FontAwesomeSolid}"/>
+                            <Entry
+                                Text="{Binding User}"
+                                Grid.Column="1"
+                                TextColor="#1C2E29"
+                                Placeholder="Usuario"/>
+                        </Grid>
+                    </controls:CanvasView>
+                    <controls:CanvasView
+                        CornerRadius="4"
+                        BackgroundColor="#EDEDED">
+                        <controls:CanvasView.Padding>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <On Platform="Android" Value="10,0"/>
+                                <On Platform="iOS" Value="10,15"/>
+                            </OnPlatform>
+                        </controls:CanvasView.Padding>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label
+                                VerticalOptions="Center"
+                                TextColor="#1C2E29"
+                                Grid.Column="0"
+                                Text="{x:Static fontawesome:FontAwesome.Password}"
+                                FontFamily="{StaticResource FontAwesomeSolid}"/>
+                            <Entry
+                                Text="{Binding Password}"
+                                Grid.Column="1"
+                                IsPassword="True"
+                                TextColor="#1C2E29"
+                                Placeholder="Contraseña"/>
+                        </Grid>
                         
-                        <StackLayout>
-                            <controls:CanvasView
-                                Padding="5,10"
-                                CornerRadius="10"
-                                Elevation="2"
-                                BackgroundColor="#F1F0F5">
-                                <Entry
-                                    Placeholder="Nombres"
-                                    PlaceholderColor="Gray"/>
-                            </controls:CanvasView>
-                        </StackLayout>
-                        <StackLayout>
-                            <controls:CanvasView
-                                Padding="5,10"
-                                CornerRadius="10"
-                                Elevation="2"
-                                BackgroundColor="#F1F0F5">
-                                <Entry
-                                    Placeholder="Apellidos"
-                                    PlaceholderColor="Gray"/>
-                            </controls:CanvasView>
-                        </StackLayout>
-                        <StackLayout>
-                            <controls:CanvasView
-                                Padding="5,10"
-                                CornerRadius="10"
-                                Elevation="2"
-                                BackgroundColor="#F1F0F5">
-                                <Entry
-                                    Placeholder="Usuario"
-                                    PlaceholderColor="Gray"/>
-                            </controls:CanvasView>
-                        </StackLayout>
-                        <StackLayout>
-                            <controls:CanvasView
-                                Padding="5,10"
-                                CornerRadius="10"
-                                Elevation="2"
-                                BackgroundColor="#F1F0F5">
-                                <Entry
-                                    Placeholder="Contraseña"
-                                    PlaceholderColor="Gray"/>
-                            </controls:CanvasView>
-                        </StackLayout>
+                    </controls:CanvasView>
+                    <Button
+                        CornerRadius="0"
+                        BackgroundColor="#1C2E29"
+                        Text="Iniciar Sesion"
+                        FontSize="Body"
+                        Command="{Binding SigInCommand}"
+                        ContentLayout="Right,10"
+                        TextColor="White">
+                        <Button.ImageSource>
+                            <FontImageSource
+                                FontFamily="{StaticResource FontAwesomeRegular}"
+                                Glyph="{x:Static fontawesome:FontAwesome.Send}"
+                                Size="20"
+                                Color="White" >
+                            </FontImageSource>
+                        </Button.ImageSource>
+                    </Button>
+                    <StackLayout
+                        Margin="0,0,30,0"
+                        Grid.Row="0"
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal">
+                        <Label
+                            TextColor="#1C2E29"
+                            Text="¿Nuevo?"/>
+                        <Label
+                            FontAttributes="Bold"
+                            TextColor="#1C2E29"
+                            Text="Registrate Aqui!!">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding RegisterCommand}"/>
+                            </Label.GestureRecognizers>
+                        </Label>
                     </StackLayout>
                 </StackLayout>
-                <StackLayout
-                    Padding="0,20"
-                    Grid.Row="2"
-                    BackgroundColor="#F1F0F5"
-                    IsVisible="{Binding IsLogIn}">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
-                        <Label
-                            VerticalOptions="Center"
-                            Margin="20,0,30,0"
-                            Grid.Column="0"
-                            Text="Olvido Contraseña"
-                            TextColor="Black"
-                            TextDecorations="Underline"
-                            FontSize="Large"/>
-                        <controls:CanvasView
-                            Margin="0,0,30,0"
-                            Padding="15,20"
-                            CornerRadius="10"
-                            BackgroundColor="#EB96B7"
-                            Grid.Column="1">
-                            <controls:CanvasView.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding LogInCommand}"/>
-                            </controls:CanvasView.GestureRecognizers>
-                            <Label
-                                Text="Iniciar"
-                                TextColor="White"/>
-                        </controls:CanvasView>
-                    </Grid>
-                </StackLayout>
-                <StackLayout
-                    Padding="0,20"
-                    Grid.Row="2"
-                    BackgroundColor="#F1F0F5"
-                    IsVisible="{Binding IsRegister}">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
-                        <Label
-                            VerticalOptions="Center"
-                            Margin="20,0,30,0"
-                            Grid.Column="0"
-                            Text="Olvido Contraseña"
-                            TextColor="Black"
-                            TextDecorations="Underline"
-                            FontSize="Large"/>
-                        <controls:CanvasView
-                            Margin="0,0,30,0"
-                            Padding="15,20"
-                            CornerRadius="10"
-                            BackgroundColor="#7AC9ED"
-                            Grid.Column="1">
-                            <controls:CanvasView.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding RegisterCommand}"/>
-                            </controls:CanvasView.GestureRecognizers>
-                            <Label
-                                Text="Registrate"
-                                TextColor="White"/>
-                        </controls:CanvasView>
-                    </Grid>
-                </StackLayout>
-            </Grid>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

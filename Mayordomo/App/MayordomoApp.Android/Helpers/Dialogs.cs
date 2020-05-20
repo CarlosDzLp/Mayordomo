@@ -23,7 +23,8 @@ namespace MayordomoApp.Droid.Helpers
 
         public async Task Hide()
         {
-            dialogAlert.Dismiss();
+            if(dialogAlert != null)
+                dialogAlert.Dismiss();
         }
 
         public async Task Snackbar(string message, string title, TypeSnackbar typeSnackbar)

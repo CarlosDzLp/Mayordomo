@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:MayordomoApp.Controls"
+    x:Class="MayordomoApp.Views.Principal.UserEnabledPage"
+    xmlns:fontawesome="clr-namespace:MayordomoApp.Fonts"
+    BackgroundColor="White"
+    Title="Usuarios">
+    <ContentPage.IconImageSource>
+        <FontImageSource
+            FontFamily="{StaticResource FontAwesomeSolid}"
+            Glyph="{x:Static fontawesome:FontAwesome.User_Add}"
+            Size="20"/>
+    </ContentPage.IconImageSource>
+    <ContentPage.Content>
+        <Grid>
+            <controls:CustomListView
+                IsVisible="{Binding Isvisible}"
+                Footer=""
+                HasUnevenRows="True"
+                SeparatorVisibility="Default"
+                SeparatorColor="#EDEDED"
+                SelectedItemCommand="{Binding SelectedItemUserEnabled}"
+                ItemsSource="{Binding ListUserEnabled}">
+                <controls:CustomListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid
+                                RowSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <StackLayout
+                                    Grid.Row="0"
+                                    Grid.Column="0">
+                                    <controls:CircleImage
+                                        WidthRequest="80"
+                                        HeightRequest="80"
+                                        Source="{Binding Image}"/>
+                                </StackLayout>
+                                <StackLayout
+                                    Grid.Row="0"
+                                    VerticalOptions="Center"
+                                    Orientation="Vertical"
+                                    Grid.Column="1">
+                                    <StackLayout
+                                        Orientation="Horizontal">
+                                        <Label
+                                            TextColor="Black"
+                                            Text="{Binding Name}"/>
+                                        <Label
+                                            TextColor="Black"
+                                            Text="{Binding LastName}"/>
+                                        <Label
+                                            TextColor="Black"
+                                            Text="{Binding Telephone}"/>
+                                    </StackLayout>
+                                    <StackLayout
+                                        Orientation="Horizontal">
+                                        <Label
+                                            TextColor="Black"
+                                            Text="{Binding Email}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <StackLayout
+                                    Margin="0,-6,0,0"
+                                    Grid.Row="1"
+                                    Orientation="Horizontal"
+                                    Grid.Column="1">
+                                    <Label
+                                            TextColor="Black"
+                                            Text="Habilitado:"/>
+                                        <Label
+                                            TextColor="Green"
+                                            Text="{Binding IsEnabled}"/>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </controls:CustomListView.ItemTemplate>
+            </controls:CustomListView>
+        </Grid>       
+    </ContentPage.Content>
+</ContentPage>

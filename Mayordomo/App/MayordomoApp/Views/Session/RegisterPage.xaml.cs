@@ -1,22 +1,24 @@
-﻿using MayordomoApp.Helpers;
+﻿using System;
+using System.Collections.Generic;
 using FormsToolkit;
+using MayordomoApp.Helpers;
 using MayordomoApp.ViewModels.Session;
 using Xamarin.Forms;
 
 namespace MayordomoApp.Views.Session
 {
-    public partial class LoginPage : ContentPage
+    public partial class RegisterPage : ContentPage
     {
-        public LoginPage()
+        public RegisterPage()
         {
             InitializeComponent();
-            this.BindingContext = new LoginPageViewModel();
+            this.BindingContext = new RegisterPageViewModel();
         }
-
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            MessagingService.Current.SendMessage<MessageKeys>("StatusBar", new MessageKeys { StatusBarTransparent = false, ColorHex = "#FFFFFF" });
+            MessagingService.Current.SendMessage<MessageKeys>("StatusBar", new MessageKeys { StatusBarTransparent = false, ColorHex = "#1C2E29" });
+            //
         }
         protected override void OnDisappearing()
         {

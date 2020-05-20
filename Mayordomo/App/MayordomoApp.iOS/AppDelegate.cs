@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
-using MediaManager;
 using UIKit;
 
 namespace MayordomoApp.iOS
@@ -26,7 +25,7 @@ namespace MayordomoApp.iOS
             global::Xamarin.Forms.Forms.Init();
             App.ScreenHeight = (int)UIScreen.MainScreen.Bounds.Height;
             App.ScreenWidth = (int)UIScreen.MainScreen.Bounds.Width;
-            CrossMediaManager.Current.Init();
+            Rg.Plugins.Popup.Popup.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
