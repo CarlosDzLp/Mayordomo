@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{BBAE9D16-2524-405F-B10A-42333643431F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mayordomo/Views/Popups/PopupDialog.xaml">
+    <Files>
+      <File FileName="Mayordomo/Views/Popups/PopupDialog.xaml" Line="24" Column="33" />
+      <File FileName="Mayordomo/ViewModels/Session/LoginPageViewModel.cs" Line="53" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Mayordomo" expanded="True">
+            <Node name="Mayordomo" expanded="True">
+              <Node name="ViewModels" expanded="True">
+                <Node name="Session" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Popups" expanded="True">
+                  <Node name="PopupDialog.xaml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Mayordomo.Android PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Mayordomo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9E482F0D-A0EF-408D-B619-79C4A384533B" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

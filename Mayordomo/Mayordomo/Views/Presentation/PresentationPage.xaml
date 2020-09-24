@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="Mayordomo.Views.Presentation.PresentationPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid RowDefinitions="*,Auto" RowSpacing="0">
+            <Grid Grid.Row="0">
+                <CarouselView
+                    HorizontalScrollBarVisibility="Never"
+                    IndicatorView="Indicador"
+                    ItemsSource="{Binding ListBanner}">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout BackgroundColor="Yellow">
+                                <Image Aspect="AspectFill" Source="{Binding Photo}" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView
+                    x:Name="Indicador"
+                    Margin="0,10"
+                    HorizontalOptions="CenterAndExpand"
+                    IndicatorColor="LightGray"
+                    IndicatorsShape="Circle"
+                    SelectedIndicatorColor="Black"
+                    VerticalOptions="End" />
+            </Grid>
+            <Grid
+                Grid.Row="1"
+                ColumnDefinitions="*,*"
+                ColumnSpacing="0">
+                <Button
+                    Grid.Column="0"
+                    Padding="0,20"
+                    BackgroundColor="Red"
+                    Command="{Binding LoginPageCommand}"
+                    CornerRadius="0"
+                    FontFamily="RRegular"
+                    FontSize="18"
+                    Text="Iniciar Session"
+                    TextColor="White" />
+                <Button
+                    Grid.Column="1"
+                    Padding="0,20"
+                    BackgroundColor="Teal"
+                    Command="{Binding RegisterPageCommand}"
+                    CornerRadius="0"
+                    FontFamily="RRegular"
+                    FontSize="18"
+                    Text="Registrarse"
+                    TextColor="White" />
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

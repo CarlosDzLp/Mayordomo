@@ -1,0 +1,87 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+    <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
+    <PackageReference Include="PropertyChanged.Fody" Version="3.2.9" />
+    <PackageReference Include="FormsToolkit" Version="2.0.1" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.5" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.4.2" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="3.1.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="Converts\" />
+    <Folder Include="DataBases\" />
+    <Folder Include="Fonts\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\Authenticate\" />
+    <Folder Include="Models\Presentation\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\Presentation\" />
+    <Folder Include="ViewModels\Base\" />
+    <Folder Include="ViewModels\Session\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Presentation\" />
+    <Folder Include="Views\Session\" />
+    <Folder Include="Models\User\" />
+    <Folder Include="Views\Popups\" />
+    <Folder Include="Enums\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Fonts\FontAwesome5Brands.otf" />
+    <None Remove="Fonts\FontAwesome5BrandsPro.otf" />
+    <None Remove="Fonts\FontAwesome5LightPro.otf" />
+    <None Remove="Fonts\FontAwesome5Regular.otf" />
+    <None Remove="Fonts\FontAwesome5RegularPro.otf" />
+    <None Remove="Fonts\FontAwesome5Solid.otf" />
+    <None Remove="Fonts\FontAwesome5SolidPro.otf" />
+    <None Remove="Fonts\RobotoBlack.ttf" />
+    <None Remove="Fonts\RobotoBlackItalic.ttf" />
+    <None Remove="Fonts\RobotoBold.ttf" />
+    <None Remove="Fonts\RobotoBoldItalic.ttf" />
+    <None Remove="Fonts\RobotoItalic.ttf" />
+    <None Remove="Fonts\RobotoLight.ttf" />
+    <None Remove="Fonts\RobotoLightItalic.ttf" />
+    <None Remove="Fonts\RobotoMedium.ttf" />
+    <None Remove="Fonts\RobotoMediumItalic.ttf" />
+    <None Remove="Fonts\RobotoRegular.ttf" />
+    <None Remove="Fonts\RobotoThin.ttf" />
+    <None Remove="Fonts\RobotoThinItalic.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\FontAwesome5Brands.otf" />
+    <EmbeddedResource Include="Fonts\FontAwesome5BrandsPro.otf" />
+    <EmbeddedResource Include="Fonts\FontAwesome5LightPro.otf" />
+    <EmbeddedResource Include="Fonts\FontAwesome5Regular.otf" />
+    <EmbeddedResource Include="Fonts\FontAwesome5RegularPro.otf" />
+    <EmbeddedResource Include="Fonts\FontAwesome5Solid.otf" />
+    <EmbeddedResource Include="Fonts\FontAwesome5SolidPro.otf" />
+    <EmbeddedResource Include="Fonts\RobotoBlack.ttf" />
+    <EmbeddedResource Include="Fonts\RobotoBlackItalic.ttf" />
+    <EmbeddedResource Include="Fonts\RobotoBold.ttf" />
+    <EmbeddedResource Include="Fonts\RobotoBoldItalic.ttf" />
+    <EmbeddedResource Include="Fonts\RobotoItalic.ttf" />
+    <EmbeddedResource Include="Fonts\RobotoLight.ttf" />
+    <EmbeddedResource Include="Fonts\RobotoLightItalic.ttf" />
+    <EmbeddedResource Include="Fonts\RobotoMedium.ttf" />
+    <EmbeddedResource Include="Fonts\RobotoMediumItalic.ttf" />
+    <EmbeddedResource Include="Fonts\RobotoRegular.ttf" />
+    <EmbeddedResource Include="Fonts\RobotoThin.ttf" />
+    <EmbeddedResource Include="Fonts\RobotoThinItalic.ttf" />
+  </ItemGroup>
+</Project>
