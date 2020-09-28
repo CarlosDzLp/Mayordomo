@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="Mayordomo.Views.Principal.HomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:font="clr-namespace:Mayordomo.Fonts"
+    Title="Inicio"
+    BackgroundColor="White"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.IconImageSource>
+        <FontImageSource
+            FontFamily="LightPro"
+            Glyph="{x:Static font:FontAwesome.Home}"
+            Size="20" />
+    </ContentPage.IconImageSource>
+    <ContentPage.Content>
+        <Grid>
+            <Button
+                Margin="0,0,10,10"
+                BackgroundColor="Black"
+                CornerRadius="30"
+                HeightRequest="60"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                WidthRequest="60">
+                <Button.ImageSource>
+                    <FontImageSource
+                        FontFamily="SolidPro"
+                        Glyph="{x:Static font:FontAwesome.Plus}"
+                        Size="20"
+                        Color="White" />
+                </Button.ImageSource>
+            </Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

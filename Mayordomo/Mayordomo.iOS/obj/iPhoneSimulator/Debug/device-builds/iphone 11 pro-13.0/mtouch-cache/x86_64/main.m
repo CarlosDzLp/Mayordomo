@@ -60,6 +60,7 @@ int main (int argc, char **argv)
 	[pool drain];
 	return rv;
 }
+
 void xamarin_initialize_callbacks () __attribute__ ((constructor));
 void xamarin_initialize_callbacks ()
 {

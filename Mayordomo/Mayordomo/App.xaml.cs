@@ -33,7 +33,7 @@ namespace Mayordomo
             return NavigationAsync = new NavigationPage(page)
             {
                 BarTextColor = Color.White,
-                BarBackgroundColor = Color.FromHex("#1C2E29")
+                BarBackgroundColor = Color.Black
             };
         }
 

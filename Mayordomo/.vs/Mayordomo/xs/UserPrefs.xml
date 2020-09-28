@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{BBAE9D16-2524-405F-B10A-42333643431F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mayordomo/Views/Popups/PopupDialog.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mayordomo/Views/Principal/UserPage.xaml">
     <Files>
-      <File FileName="Mayordomo/Views/Popups/PopupDialog.xaml" Line="24" Column="33" />
-      <File FileName="Mayordomo/ViewModels/Session/LoginPageViewModel.cs" Line="53" Column="15" />
+      <File FileName="Mayordomo/Views/Principal/UserPage.xaml" Line="14" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mayordomo" expanded="True">
             <Node name="Mayordomo" expanded="True">
-              <Node name="ViewModels" expanded="True">
-                <Node name="Session" expanded="True" />
-              </Node>
+              <Node name="Fonts" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Popups" expanded="True">
-                  <Node name="PopupDialog.xaml" selected="True" />
+                <Node name="Principal" expanded="True">
+                  <Node name="UserPage.xaml" selected="True" />
                 </Node>
               </Node>
+              <Node name="App.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -28,7 +27,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Mayordomo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9E482F0D-A0EF-408D-B619-79C4A384533B" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/ViewModels/Session/LoginPageViewModel.cs" relfile="Mayordomo/ViewModels/Session/LoginPageViewModel.cs" line="31" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/ViewModels/Presentation/PresentationPageViewModel.cs" relfile="Mayordomo/ViewModels/Presentation/PresentationPageViewModel.cs" line="57" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

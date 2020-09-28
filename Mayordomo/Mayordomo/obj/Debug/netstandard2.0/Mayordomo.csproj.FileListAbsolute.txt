@@ -4,7 +4,6 @@
 /Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/bin/Debug/netstandard2.0/Mayordomo.pdb
 /Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/Mayordomo.csprojAssemblyReference.cache
 /Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/App.xaml.g.cs
-/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
 /Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/Views/Presentation/PresentationPage.xaml.g.cs
 /Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/Views/Session/LoginPage.xaml.g.cs
 /Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/Views/Session/RegisterPage.xaml.g.cs
@@ -19,3 +18,7 @@
 /Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/Views/Popups/LoadingPopup.xaml.g.cs
 /Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/Views/Popups/PopupDialog.xaml.g.cs
 /Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/Views/Popups/PopupDialogResponse.xaml.g.cs
+/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/Views/Principal/HomePage.xaml.g.cs
+/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/Views/Principal/MasterPage.xaml.g.cs
+/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/Views/Principal/UserPage.xaml.g.cs
+/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/Debug/netstandard2.0/Views/Principal/EventsPage.xaml.g.cs

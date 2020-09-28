@@ -41,6 +41,8 @@
     <Folder Include="Models\User\" />
     <Folder Include="Views\Popups\" />
     <Folder Include="Enums\" />
+    <Folder Include="ViewModels\Principal\" />
+    <Folder Include="Views\Principal\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Fonts\FontAwesome5Brands.otf" />

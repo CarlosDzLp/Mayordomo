@@ -258,6 +258,10 @@ Function=xamarin_simd__void_objc_msgSend_NMatrix4_NVector3_NVector3_IntPtr
 	/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4_NVector3_NVector3_IntPtr
 	/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NVector3_IntPtr
+	/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NVector3_IntPtr
+	/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__Vector2_objc_msgSend_IntPtr
 	/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__Vector2_objc_msgSendSuper_IntPtr
