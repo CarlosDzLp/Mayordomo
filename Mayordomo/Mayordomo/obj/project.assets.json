@@ -1479,28 +1479,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/carlosdiaz/.nuget/packages/": {}
+    "C:\\Users\\LVLA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/Mayordomo.csproj",
+      "projectUniqueName": "C:\\Users\\LVLA\\Documents\\GitHub\\Mayordomo\\Mayordomo\\Mayordomo\\Mayordomo.csproj",
       "projectName": "Mayordomo",
-      "projectPath": "/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/Mayordomo.csproj",
-      "packagesPath": "/Users/carlosdiaz/.nuget/packages/",
-      "outputPath": "/Users/carlosdiaz/Mayordomo/Mayordomo/Mayordomo/obj/",
+      "projectPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Mayordomo\\Mayordomo\\Mayordomo\\Mayordomo.csproj",
+      "packagesPath": "C:\\Users\\LVLA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Mayordomo\\Mayordomo\\Mayordomo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/carlosdiaz/.config/NuGet/NuGet.Config"
+        "C:\\Users\\LVLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {}
         }
       },
@@ -1512,6 +1515,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "Com.Airbnb.Xamarin.Forms.Lottie": {
             "target": "Package",
@@ -1570,7 +1574,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
