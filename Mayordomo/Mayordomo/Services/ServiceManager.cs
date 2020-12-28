@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using Mayordomo.Helpers;
 using Mayordomo.Models.User;
@@ -46,9 +47,17 @@ namespace Mayordomo.Services
         {
             try
             {
-                var result = await connectionApi.InsertUser(user);
-                if (result.StatusCode == HttpStatusCode.OK)
-                    return result.Content;
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri(Settings.URL);
+                var deserializer = Newtonsoft.Json.JsonConvert.SerializeObject(user);
+                HttpContent content = new StringContent(deserializer, Encoding.UTF8, "application/json");
+                var response = await client.PostAsync("api/authenticate/insertuser", content);
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    var responseString = await response.Content.ReadAsStringAsync();
+                    var responseDeserializer = Newtonsoft.Json.JsonConvert.DeserializeObject<Response<bool>>(responseString);
+                    return responseDeserializer;
+                }
                 return null;
             }
             catch (Exception ex)

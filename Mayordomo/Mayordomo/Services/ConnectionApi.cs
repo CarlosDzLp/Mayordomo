@@ -15,8 +15,8 @@ namespace Mayordomo.Services
 
 
         //POST
-        [Multipart]
-        [Post("/api/authenticate/insertuser")]
-        Task<ApiResponse<Response<bool>>> InsertUser([Body] UserModel user);
+        //[Multipart]
+        //[Post("/api/authenticate/insertuser")]
+        //Task<ApiResponse<Response<bool>>> InsertUser([Body] UserModel user);
     }
 }

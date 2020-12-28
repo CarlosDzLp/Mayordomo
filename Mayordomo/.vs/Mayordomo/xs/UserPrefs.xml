@@ -1,29 +1,24 @@
 ﻿<Properties StartupConfiguration="{3B84C139-CCF7-4206-ADA9-39CB4E0A49D8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mayordomo/Services/ConnectionApi.cs">
-    <Files>
-      <File FileName="Mayordomo/Services/ConnectionApi.cs" Line="18" Column="19" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mayordomo" expanded="True">
             <Node name="Mayordomo" expanded="True">
-              <Node name="Converts" expanded="True" />
               <Node name="Services" expanded="True">
-                <Node name="ConnectionApi.cs" selected="True" />
+                <Node name="ServiceManager.cs" selected="True" />
               </Node>
               <Node name="ViewModels" expanded="True">
                 <Node name="Session" expanded="True" />
               </Node>
             </Node>
-            <Node name="Mayordomo.Android" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Mayordomo.Android AndroidDesignerPreferredTheme="MainTheme" TriggeredFromHotReload="False" PreferredExecutionTarget="Android.A4N4C19B25003791" />
+  <MonoDevelop.Ide.ItemProperties.Mayordomo.Android AndroidDesignerPreferredTheme="MainTheme" TriggeredFromHotReload="False" PreferredExecutionTarget="Android.R58M71K1VLF" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Mayordomo.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.077E2697-49B0-4E2A-8677-7A8F389B5932" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -33,11 +28,8 @@
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/Helpers/PhotoCamera.cs" relfile="Mayordomo/Helpers/PhotoCamera.cs" line="31" column="1" />
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/Helpers/PhotoCamera.cs" relfile="Mayordomo/Helpers/PhotoCamera.cs" line="44" column="1" />
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" relfile="Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" line="43" column="1" />
-      <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" relfile="Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" line="92" column="1" />
-      <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" relfile="Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" line="108" column="1" />
-      <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/Services/ServiceManager.cs" relfile="Mayordomo/Services/ServiceManager.cs" line="46" column="1" />
-      <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/Services/ServiceManager.cs" relfile="Mayordomo/Services/ServiceManager.cs" line="50" column="1" />
-      <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/Services/ServiceManager.cs" relfile="Mayordomo/Services/ServiceManager.cs" line="55" column="1" />
+      <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" relfile="Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" line="91" column="1" />
+      <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" relfile="Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" line="107" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

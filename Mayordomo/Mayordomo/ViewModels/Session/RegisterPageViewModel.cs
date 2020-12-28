@@ -85,7 +85,6 @@ namespace Mayordomo.ViewModels.Session
                     UserType = 0,
                     PhotoBytes = Photo
                 };
-                var ser = Newtonsoft.Json.JsonConvert.SerializeObject(user);
                 Show("Enviando datos......");
                 var responseInsertUser = await client.InsertUser(user);
                 Hide();
