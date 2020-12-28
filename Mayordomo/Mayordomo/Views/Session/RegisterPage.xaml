@@ -1,28 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage
-    x:Class="Mayordomo.Views.Session.RegisterPage"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:controls="clr-namespace:Mayordomo.Controls"
-    xmlns:font="clr-namespace:Mayordomo.Fonts"
-    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-    xmlns:view="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    Title="Registro"
-    ios:Page.UseSafeArea="True"
-    BackgroundColor="White"
-    NavigationPage.HasNavigationBar="False">
+<ContentPage x:Class="Mayordomo.Views.Session.RegisterPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Mayordomo.Controls"
+             xmlns:font="clr-namespace:Mayordomo.Fonts"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:view="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             Title="Registro"
+             ios:Page.UseSafeArea="True"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <Grid RowDefinitions="Auto,*">
-            <StackLayout
-                Grid.Row="0"
-                Padding="15,20"
-                HorizontalOptions="Start">
+            <StackLayout Grid.Row="0"
+                         Padding="15,20"
+                         HorizontalOptions="Start">
                 <Image>
                     <Image.Source>
-                        <FontImageSource
-                            FontFamily="RegularPro"
-                            Glyph="{x:Static font:FontAwesome.ArrowLeft}"
-                            Color="Black" />
+                        <FontImageSource FontFamily="Solid"
+                                         Glyph="{x:Static font:FontAwesome.ArrowLeft}"
+                                         Size="50"
+                                         Color="Black" />
                     </Image.Source>
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
@@ -32,34 +30,48 @@
             <ScrollView Grid.Row="1" VerticalScrollBarVisibility="Never">
                 <StackLayout>
                     <StackLayout VerticalOptions="CenterAndExpand">
-                        <StackLayout
-                            Padding="30,0"
-                            HorizontalOptions="CenterAndExpand"
-                            VerticalOptions="Center">
+                        <StackLayout Padding="30,10"
+                                     HorizontalOptions="CenterAndExpand"
+                                     VerticalOptions="Center">
                             <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>
-                                <Image
-                                    Grid.Row="0"
-                                    Grid.Column="0"
-                                    HeightRequest="120"
-                                    Source="{Binding Photo, Converter={StaticResource imageconvertbytes}}">
-                                    <Image.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding LoadPhotoCommand}" />
-                                    </Image.GestureRecognizers>
-                                </Image>
+                                <view:PancakeView Padding="0"
+                                                  BackgroundColor="White"
+                                                  CornerRadius="60"
+                                                  HeightRequest="120"
+                                                  WidthRequest="120">
+                                    <view:PancakeView.Shadow>
+                                        <view:DropShadow BlurRadius="5"
+                                                         Offset="0,1"
+                                                         Color="Gray" />
+                                    </view:PancakeView.Shadow>
+                                    <controls:CircleImage Grid.Row="0"
+                                                          Grid.Column="0"
+                                                          Aspect="AspectFit"
+                                                          BackgroundColor="White"
+                                                          BorderColor="Black"
+                                                          BorderThickness="2"
+                                                          HeightRequest="120"
+                                                          Source="{Binding Photo, Converter={StaticResource imageconvertbytes}}"
+                                                          WidthRequest="120">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding LoadPhotoCommand}" />
+                                        </Image.GestureRecognizers>
+                                    </controls:CircleImage>
+                                </view:PancakeView>
+
                             </Grid>
                         </StackLayout>
 
                         <StackLayout Padding="30,0" Spacing="15">
-                            <view:PancakeView
-                                Padding="10,15"
-                                BackgroundColor="#EDEDED"
-                                CornerRadius="4">
+                            <view:PancakeView Padding="10,15"
+                                              BackgroundColor="#dadada"
+                                              CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
-                                        <On Platform="Android" Value="10,0" />
+                                        <On Platform="Android" Value="10,5" />
                                         <On Platform="iOS" Value="10,15" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
@@ -67,20 +79,18 @@
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
-                                    <Entry
-                                        Grid.Column="0"
-                                        Placeholder="Nombre"
-                                        Text="{Binding Name}"
-                                        TextColor="#1C2E29" />
+                                    <Entry Grid.Column="0"
+                                           Placeholder="Nombre"
+                                           Text="{Binding Name}"
+                                           TextColor="#1C2E29" />
                                 </Grid>
                             </view:PancakeView>
-                            <view:PancakeView
-                                Padding="10,15"
-                                BackgroundColor="#EDEDED"
-                                CornerRadius="4">
+                            <view:PancakeView Padding="10,15"
+                                              BackgroundColor="#dadada"
+                                              CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
-                                        <On Platform="Android" Value="10,0" />
+                                        <On Platform="Android" Value="10,5" />
                                         <On Platform="iOS" Value="10,15" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
@@ -88,26 +98,23 @@
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
-                                    <Entry
-                                        Grid.Column="0"
-                                        Placeholder="Apellidos"
-                                        Text="{Binding LastName}"
-                                        TextColor="#1C2E29" />
+                                    <Entry Grid.Column="0"
+                                           Placeholder="Apellidos"
+                                           Text="{Binding LastName}"
+                                           TextColor="#1C2E29" />
                                 </Grid>
                             </view:PancakeView>
-                            <view:PancakeView
-                                Padding="10,15"
-                                BackgroundColor="#EDEDED"
-                                CornerRadius="4">
+                            <view:PancakeView Padding="10,15"
+                                              BackgroundColor="#dadada"
+                                              CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
-                                        <On Platform="Android" Value="10,0" />
+                                        <On Platform="Android" Value="10,5" />
                                         <On Platform="iOS" Value="10,15" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto" />
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
                                     <!--<Label
@@ -116,18 +123,16 @@
                                     Text="{x:Static font:FontAwesome.Telephone}"
                                     TextColor="#1C2E29"
                                     VerticalOptions="Center" />-->
-                                    <Entry
-                                        Grid.Column="1"
-                                        Keyboard="Telephone"
-                                        Placeholder="Telefono"
-                                        Text="{Binding Phone}"
-                                        TextColor="#1C2E29" />
+                                    <Entry Grid.Column="0"
+                                           Keyboard="Telephone"
+                                           Placeholder="Telefono"
+                                           Text="{Binding Phone}"
+                                           TextColor="#1C2E29" />
                                 </Grid>
                             </view:PancakeView>
-                            <view:PancakeView
-                                Padding="10,15"
-                                BackgroundColor="#EDEDED"
-                                CornerRadius="4">
+                            <view:PancakeView Padding="10,15"
+                                              BackgroundColor="#dadada"
+                                              CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="Android" Value="10,0" />
@@ -136,30 +141,27 @@
                                 </view:PancakeView.Padding>
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto" />
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
-                                    <Label
-                                        Grid.Column="0"
-                                        FontFamily="Solid"
-                                        Text="{x:Static font:FontAwesome.User}"
-                                        TextColor="#1C2E29"
-                                        VerticalOptions="Center" />
-                                    <Entry
-                                        Grid.Column="1"
-                                        Keyboard="Default"
-                                        Placeholder="Usuario"
-                                        Text="{Binding User}"
-                                        TextColor="#1C2E29" />
+                                    <!--<Label Grid.Column="0"
+                                           FontFamily="Solid"
+                                           Text="{x:Static font:FontAwesome.User}"
+                                           TextColor="#1C2E29"
+                                           VerticalOptions="Center" />-->
+                                    <Entry Grid.Column="0"
+                                           IsReadOnly="True"
+                                           Keyboard="Default"
+                                           Placeholder="Correo"
+                                           Text="{Binding Email}"
+                                           TextColor="#1C2E29" />
                                 </Grid>
                             </view:PancakeView>
-                            <view:PancakeView
-                                Padding="10,15"
-                                BackgroundColor="#EDEDED"
-                                CornerRadius="4">
+                            <view:PancakeView Padding="10,15"
+                                              BackgroundColor="#dadada"
+                                              CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
-                                        <On Platform="Android" Value="10,0" />
+                                        <On Platform="Android" Value="10,5" />
                                         <On Platform="iOS" Value="10,15" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
@@ -174,31 +176,32 @@
                                     Text="{x:Static font:FontAwesome.Password}"
                                     TextColor="#1C2E29"
                                     VerticalOptions="Center" />-->
-                                    <Entry
-                                        Grid.Column="1"
-                                        IsPassword="True"
-                                        Placeholder="Contraseña"
-                                        Text="{Binding Password}"
-                                        TextColor="#1C2E29" />
+                                    <Entry Grid.Column="1"
+                                           IsPassword="True"
+                                           Placeholder="Contraseña"
+                                           Text="{Binding Password}"
+                                           TextColor="#1C2E29" />
                                 </Grid>
                             </view:PancakeView>
-                            <Button
-                                Margin="0,0,0,20"
-                                BackgroundColor="#1C2E29"
-                                Command="{Binding RegisterCommand}"
-                                ContentLayout="Right,10"
-                                CornerRadius="0"
-                                FontSize="Body"
-                                Text="Registrarse"
-                                TextColor="White">
-                                <Button.ImageSource>
-                                    <!--<FontImageSource
-                                    FontFamily="Solid"
-                                    Glyph="{x:Static font:FontAwesome.Register}"
-                                    Size="20"
-                                    Color="White" />-->
-                                </Button.ImageSource>
-                            </Button>
+                            <view:PancakeView BackgroundColor="Black"
+                                              CornerRadius="30"
+                                              HeightRequest="60">
+                                <view:PancakeView.Shadow>
+                                    <view:DropShadow BlurRadius="5"
+                                                     Offset="0,1"
+                                                     Color="Gray" />
+                                </view:PancakeView.Shadow>
+                                <view:PancakeView.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding RegisterCommand}" />
+                                </view:PancakeView.GestureRecognizers>
+                                <Label FontFamily="RRegular"
+                                       FontSize="Medium"
+                                       HorizontalOptions="Center"
+                                       Text="Iniciar Session"
+                                       TextColor="White"
+                                       VerticalOptions="Center" />
+                            </view:PancakeView>
+
                         </StackLayout>
                     </StackLayout>
                 </StackLayout>

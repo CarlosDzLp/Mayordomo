@@ -1,26 +1,34 @@
 ﻿using System;
+using System.IO;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Mayordomo.Helpers;
+using Mayordomo.Models.User;
+using Mayordomo.Services;
 using Mayordomo.ViewModels.Base;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Mayordomo.ViewModels.Session
 {
     public class RegisterPageViewModel : BindableBase
     {
+        IServiceManager client = new ServiceManager();
         #region Properties
         public byte[] Photo { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
         public string Phone { get; set; }
-        public string User { get; set; }
+        public string Email { get; set; }
         public string Password { get; set; }
+        public string Address { get; set; }
         #endregion
 
         #region Constructor
-        public RegisterPageViewModel()
+        public RegisterPageViewModel(string email)
         {
-            RegisterCommand = new Command(RegisterCommandExecuted);
+            Email = email;
+            RegisterCommand = new Command(async () => await RegisterCommandExecuted());
             LoadPhotoCommand = new Command(LoadPhotoCommandExecuted);
         }
         #endregion
@@ -31,7 +39,7 @@ namespace Mayordomo.ViewModels.Session
         #endregion
 
         #region CommandExecuted
-        private async void RegisterCommandExecuted()
+        private async Task RegisterCommandExecuted()
         {
             try
             {
@@ -55,7 +63,7 @@ namespace Mayordomo.ViewModels.Session
                     Toast("Ingrese un telefono");
                     return;
                 }
-                if (string.IsNullOrWhiteSpace(User))
+                if (string.IsNullOrWhiteSpace(Email))
                 {
                     Toast("Ingrese un usuario");
                     return;
@@ -65,9 +73,35 @@ namespace Mayordomo.ViewModels.Session
                     Toast("Ingrese una contraseña");
                     return;
                 }
+
+                var user = new UserModel()
+                {
+                    Address = Address,
+                    Email = Email,
+                    LastName = LastName,
+                    Name = Name,
+                    Password = Password,
+                    Status = false,
+                    UserType = 0,
+                    PhotoBytes = Photo
+                };
+                var ser = Newtonsoft.Json.JsonConvert.SerializeObject(user);
                 Show("Enviando datos......");
-                //var responseemail = await client.Get<Response<UserModel>>($"user/useremail?email={Email}");
+                var responseInsertUser = await client.InsertUser(user);
                 Hide();
+                if (responseInsertUser != null)
+                {
+                    if(responseInsertUser.Result)
+                    {
+                        Snack("Se agrego correctamente, espere a que un administrador le de acceso", "Mayordomo", TypeSnackbar.Success);
+                        await App.NavigationAsync.Navigation.PopToRootAsync(true);
+                    }
+                }
+                else
+                {
+                    Toast("Hubo un error intente mas tarde");
+                }
+                
 
             }
             catch (Exception ex)
@@ -78,33 +112,60 @@ namespace Mayordomo.ViewModels.Session
         }
         private async void LoadPhotoCommandExecuted()
         {
-            string answer = await App.Current.MainPage.DisplayActionSheet("Notaria 23", "Cancelar", null, "Camara", "Galeria");
-            if (!string.IsNullOrWhiteSpace(answer))
+            try
             {
-                if (answer == "Galeria")
+                string answer = await App.Current.MainPage.DisplayActionSheet("Mayordomo", "Cancelar", null, "Camara", "Galeria");
+                if (!string.IsNullOrWhiteSpace(answer))
                 {
-                    var status = await Utils.PermissionsStatus(Plugin.Permissions.Abstractions.Permission.Storage);
-                    if (status)
+                    if (answer == "Galeria")
                     {
-                        Photo = await PhotoCamera.PickPhoto();
+                        var status = await Utils.PermissionsStatus(Plugin.Permissions.Abstractions.Permission.Storage);
+                        if (status)
+                        {
+                            var camera = await Xamarin.Essentials.MediaPicker.PickPhotoAsync(new MediaPickerOptions() { Title = "test" });
+                            var stream = await camera.OpenReadAsync();
+                            if (stream != null)
+                            {
+                                Photo = ReadFully(stream);
+                            }
+                        }
+                        else
+                        {
+                            Toast("Habilite los permisos requeridos");
+                        }
                     }
-                    else
+                    else if (answer == "Camara")
                     {
-                        Toast("Habilite los permisos requeridos");
+                        
+                        var status = await Utils.PermissionsStatus(Plugin.Permissions.Abstractions.Permission.Camera);
+                        if (status)
+                        {
+                            var pickphoto = await Xamarin.Essentials.MediaPicker.CapturePhotoAsync(new MediaPickerOptions() { Title = "test" });
+                            var stream = await pickphoto.OpenReadAsync();
+                            if (stream != null)
+                            {
+                                Photo = ReadFully(stream);
+                            }
+                        }
+                        else
+                        {
+                            Toast("Habilite los permisos requeridos");
+                        }
                     }
                 }
-                else if (answer == "Camara")
-                {
-                    var status = await Utils.PermissionsStatus(Plugin.Permissions.Abstractions.Permission.Camera);
-                    if (status)
-                    {
-                        Photo = await PhotoCamera.TakePhoto();
-                    }
-                    else
-                    {
-                        Toast("Habilite los permisos requeridos");
-                    }
-                }
+            }
+            catch(Exception ex)
+            {
+
+            }
+        }
+
+        public static byte[] ReadFully(Stream input)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                input.CopyTo(ms);
+                return ms.ToArray();
             }
         }
         #endregion
