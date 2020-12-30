@@ -5,6 +5,7 @@
              xmlns:controls="clr-namespace:Mayordomo.Controls"
              xmlns:font="clr-namespace:Mayordomo.Fonts"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:local="clr-namespace:Mayordomo.Triggers"
              xmlns:view="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              Title="Registro"
              ios:Page.UseSafeArea="True"
@@ -162,25 +163,33 @@
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="Android" Value="10,5" />
-                                        <On Platform="iOS" Value="10,15" />
+                                        <On Platform="iOS" Value="10,3" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto" />
                                         <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
-                                    <!--<Label
-                                    Grid.Column="0"
-                                    FontFamily="Solid"
-                                    Text="{x:Static font:FontAwesome.Password}"
-                                    TextColor="#1C2E29"
-                                    VerticalOptions="Center" />-->
-                                    <Entry Grid.Column="1"
-                                           IsPassword="True"
+                                    <Entry Grid.Column="0"
+                                           IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"
                                            Placeholder="Contraseña"
                                            Text="{Binding Password}"
                                            TextColor="#1C2E29" />
+                                    <ImageButton Grid.Column="1">
+                                        <ImageButton.Source>
+                                            <FontImageSource FontFamily="Regular"
+                                                             Glyph="{x:Static font:FontAwesome.Hide}"
+                                                             Size="25"
+                                                             Color="Black" />
+                                        </ImageButton.Source>
+                                        <ImageButton.Triggers>
+                                            <EventTrigger Event="Clicked">
+                                                <local:ShowPasswordTriggerAction x:Name="ShowPasswordActualTrigger" />
+                                            </EventTrigger>
+                                        </ImageButton.Triggers>
+                                    </ImageButton>
+
                                 </Grid>
                             </view:PancakeView>
                             <view:PancakeView BackgroundColor="Black"

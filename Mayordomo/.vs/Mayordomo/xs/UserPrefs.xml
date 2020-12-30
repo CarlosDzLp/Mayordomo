@@ -1,15 +1,17 @@
-﻿<Properties StartupConfiguration="{3B84C139-CCF7-4206-ADA9-39CB4E0A49D8}|Default">
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{BBAE9D16-2524-405F-B10A-42333643431F}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mayordomo/Views/Principal/MasterPage.xaml">
+    <Files>
+      <File FileName="Mayordomo/Views/Principal/MasterPage.xaml" Line="136" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mayordomo" expanded="True">
             <Node name="Mayordomo" expanded="True">
-              <Node name="Services" expanded="True">
-                <Node name="ServiceManager.cs" selected="True" />
-              </Node>
-              <Node name="ViewModels" expanded="True">
-                <Node name="Session" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Principal" expanded="True">
+                  <Node name="MasterPage.xaml" expanded="True" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -18,9 +20,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Mayordomo.Android AndroidDesignerPreferredTheme="MainTheme" TriggeredFromHotReload="False" PreferredExecutionTarget="Android.R58M71K1VLF" />
+  <MonoDevelop.Ide.ItemProperties.Mayordomo.Android AndroidDesignerPreferredTheme="MainTheme" TriggeredFromHotReload="False" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Mayordomo.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.077E2697-49B0-4E2A-8677-7A8F389B5932" />
+  <MonoDevelop.Ide.ItemProperties.Mayordomo.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7CC304D9-B8DD-43FC-9417-A8866F5A312B" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/ViewModels/Session/EmailValidatePageViewModel.cs" relfile="Mayordomo/ViewModels/Session/EmailValidatePageViewModel.cs" line="68" column="1" />
@@ -30,6 +32,7 @@
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" relfile="Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" line="43" column="1" />
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" relfile="Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" line="91" column="1" />
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" relfile="Mayordomo/ViewModels/Session/RegisterPageViewModel.cs" line="107" column="1" />
+      <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/Triggers/ShowPasswordTriggerAction.cs" relfile="Mayordomo/Triggers/ShowPasswordTriggerAction.cs" line="26" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

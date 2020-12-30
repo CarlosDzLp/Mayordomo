@@ -8,6 +8,9 @@ namespace Mayordomo.Fonts
         public const string Email = "\uf0e0";
 
 
+        public const string Eye = "\uf06e";//Solid
+        public const string Hide = "\uf070";//Regular
+
 
         public const string Home = "\uf015";
         public const string ArrowLeft = "\uf060";
