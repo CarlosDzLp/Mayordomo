@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace Mayordomo.Views.Principal
+namespace Mayordomo.Views.Principal.Admin
 {
-    public partial class HomePage : ContentPage
+    public partial class DashboardAdminPage : ContentPage
     {
-        public HomePage()
+        public DashboardAdminPage()
         {
             InitializeComponent();
         }

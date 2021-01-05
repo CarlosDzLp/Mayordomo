@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Mayordomo.Helpers;
 using Mayordomo.Models.User;
+using Mayordomo.Models.WSResponse;
 using Mayordomo.Services;
 using Mayordomo.ViewModels.Base;
 using Xamarin.Essentials;
@@ -85,8 +86,9 @@ namespace Mayordomo.ViewModels.Session
                     UserType = 0,
                     PhotoBytes = Photo
                 };
+                var serializer = Newtonsoft.Json.JsonConvert.SerializeObject(user);
                 Show("Enviando datos......");
-                var responseInsertUser = await client.InsertUser(user);
+                var responseInsertUser = await client.Post<Response<bool>>(serializer, "api/authenticate/insertuser");
                 Hide();
                 if (responseInsertUser != null)
                 {

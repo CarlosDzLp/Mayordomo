@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Mayordomo.Helpers;
+using Mayordomo.Models.WSResponse;
 using Mayordomo.Services;
 using Mayordomo.ViewModels.Base;
 using Xamarin.Forms;
@@ -47,7 +48,7 @@ namespace Mayordomo.ViewModels.Session
             try
             {
                 Show("Obteniendo datos...");
-                var response = await client.ValidateEmail(Email);
+                var response = await client.Get<Response<bool>>($"api/authenticate/validateemail?email={Email}");
                 Hide();
                 if (response != null)
                 {

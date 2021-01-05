@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Mayordomo.Models.Authenticate;
 using Mayordomo.Models.User;
 using Mayordomo.Models.WSResponse;
 using Refit;
 
 namespace Mayordomo.Services
 {
-    [Headers("Content-Type: application/json;", "Content-Type: application/octet-stream")]
+    [Headers("application/json;")]
     public interface ConnectionApi
     {
         //GET
@@ -15,8 +16,11 @@ namespace Mayordomo.Services
 
 
         //POST
-        //[Multipart]
-        //[Post("/api/authenticate/insertuser")]
-        //Task<ApiResponse<Response<bool>>> InsertUser([Body] UserModel user);
+        [Post("/api/authenticate/aoth")]
+        Task<ApiResponse<TokenResponse>> Authenticate([Body] UserModel user);
+
+        [Post("/api/authenticate/dologin")]
+        [Headers("Content-Type: application/octet-stream")]
+        Task<ApiResponse<Response<UserModel>>> DoLogin([Body] UserModel user);
     }
 }

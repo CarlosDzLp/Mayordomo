@@ -11,8 +11,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1829-pre6" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1-preview1" />
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
     <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
@@ -22,7 +20,8 @@
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.0.8" />
     <PackageReference Include="Refit" Version="5.2.4" />
-    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.0-pre6" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1821" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
@@ -48,6 +47,11 @@
     <Folder Include="Services\" />
     <Folder Include="Models\WSResponse\" />
     <Folder Include="Triggers\" />
+    <Folder Include="Views\Principal\Admin\" />
+    <Folder Include="Views\Principal\Leader\" />
+    <Folder Include="ViewModels\Principal\Admin\" />
+    <Folder Include="Models\Admin\" />
+    <Folder Include="Views\Principal\Admin\Pages\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Fonts\FontAwesome5Brands.otf" />

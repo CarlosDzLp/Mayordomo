@@ -7,21 +7,26 @@ namespace Mayordomo
 {
     public partial class App : Application
     {
+        public static MasterDetailPage Master { get; set; }
+
         public static int ScreenHeight { get; set; }
         public static int ScreenWidth { get; set; }
 
         public App()
         {
             InitializeComponent();
-            //var user = DbContext.Instance.GetUser();
-            //if (user != null)
-            //{
-            //    MainPage = new NavigationPage(new Views.Principal.MasterPage());
-            //}
-            //else
-            //{
-            MainPage = Navigation(new Views.Presentation.PresentationPage());
-            //}
+            var token = DbContext.Instance.GetToken();
+            if (token != null)
+            {
+                if (token.UserType == 1)
+                    MainPage = new Views.Principal.Admin.MasterAdminPage();
+                else if (token.UserType == 0)
+                    MainPage = new Views.Principal.Leader.MasterLeaderPage();
+            }
+            else
+            {
+                MainPage = Navigation(new Views.Presentation.PresentationPage());
+            }
             //OneSignal.Current.IdsAvailable(IdsAvailable);
             //OneSignal.Current.StartInit("c2df8f3d-8733-47b2-87b3-9787310cecc3").InFocusDisplaying(OSInFocusDisplayOption.Notification).EndInit();
 

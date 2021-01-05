@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace Mayordomo.Views.Principal
+namespace Mayordomo.Views.Principal.Leader
 {
-    public partial class EventsPage : ContentPage
+    public partial class MasterLeaderPage : ContentPage
     {
-        public EventsPage()
+        public MasterLeaderPage()
         {
             InitializeComponent();
         }

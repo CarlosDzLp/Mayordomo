@@ -32,13 +32,12 @@
 
                 <view:PancakeView Grid.Row="1"
                                   Margin="20,20,20,0"
-                                  Padding="10,15"
                                   BackgroundColor="#dadada"
                                   CornerRadius="4">
                     <view:PancakeView.Padding>
                         <OnPlatform x:TypeArguments="Thickness">
                             <On Platform="Android" Value="10,5" />
-                            <On Platform="iOS" Value="10,15" />
+                            <On Platform="iOS" Value="10,10" />
                         </OnPlatform>
                     </view:PancakeView.Padding>
                     <Grid>
@@ -63,6 +62,7 @@
                         <Entry x:Name="entryemail"
                                Grid.ColumnSpan="2"
                                FontFamily="RRegular"
+                               Keyboard="Email"
                                Placeholder="Correo"
                                PlaceholderColor="Gray"
                                Text="{Binding Email}"

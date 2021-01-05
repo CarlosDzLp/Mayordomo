@@ -62,18 +62,14 @@
                                         </Image.GestureRecognizers>
                                     </controls:CircleImage>
                                 </view:PancakeView>
-
                             </Grid>
                         </StackLayout>
-
                         <StackLayout Padding="30,0" Spacing="15">
-                            <view:PancakeView Padding="10,15"
-                                              BackgroundColor="#dadada"
-                                              CornerRadius="4">
+                            <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="Android" Value="10,5" />
-                                        <On Platform="iOS" Value="10,15" />
+                                        <On Platform="iOS" Value="10,10" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
                                 <Grid>
@@ -81,18 +77,17 @@
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
                                     <Entry Grid.Column="0"
+                                           Keyboard="Plain"
                                            Placeholder="Nombre"
                                            Text="{Binding Name}"
                                            TextColor="#1C2E29" />
                                 </Grid>
                             </view:PancakeView>
-                            <view:PancakeView Padding="10,15"
-                                              BackgroundColor="#dadada"
-                                              CornerRadius="4">
+                            <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="Android" Value="10,5" />
-                                        <On Platform="iOS" Value="10,15" />
+                                        <On Platform="iOS" Value="10,10" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
                                 <Grid>
@@ -100,18 +95,17 @@
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
                                     <Entry Grid.Column="0"
+                                           Keyboard="Plain"
                                            Placeholder="Apellidos"
                                            Text="{Binding LastName}"
                                            TextColor="#1C2E29" />
                                 </Grid>
                             </view:PancakeView>
-                            <view:PancakeView Padding="10,15"
-                                              BackgroundColor="#dadada"
-                                              CornerRadius="4">
+                            <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="Android" Value="10,5" />
-                                        <On Platform="iOS" Value="10,15" />
+                                        <On Platform="iOS" Value="10,10" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
                                 <Grid>
@@ -131,13 +125,11 @@
                                            TextColor="#1C2E29" />
                                 </Grid>
                             </view:PancakeView>
-                            <view:PancakeView Padding="10,15"
-                                              BackgroundColor="#dadada"
-                                              CornerRadius="4">
+                            <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="Android" Value="10,0" />
-                                        <On Platform="iOS" Value="10,15" />
+                                        <On Platform="iOS" Value="10,10" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
                                 <Grid>
@@ -151,19 +143,17 @@
                                            VerticalOptions="Center" />-->
                                     <Entry Grid.Column="0"
                                            IsReadOnly="True"
-                                           Keyboard="Default"
+                                           Keyboard="Email"
                                            Placeholder="Correo"
                                            Text="{Binding Email}"
                                            TextColor="#1C2E29" />
                                 </Grid>
                             </view:PancakeView>
-                            <view:PancakeView Padding="10,15"
-                                              BackgroundColor="#dadada"
-                                              CornerRadius="4">
+                            <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="Android" Value="10,5" />
-                                        <On Platform="iOS" Value="10,3" />
+                                        <On Platform="iOS" Value="10,10" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
                                 <Grid>
@@ -173,6 +163,7 @@
                                     </Grid.ColumnDefinitions>
                                     <Entry Grid.Column="0"
                                            IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"
+                                           Keyboard="Plain"
                                            Placeholder="Contraseña"
                                            Text="{Binding Password}"
                                            TextColor="#1C2E29" />
@@ -189,7 +180,6 @@
                                             </EventTrigger>
                                         </ImageButton.Triggers>
                                     </ImageButton>
-
                                 </Grid>
                             </view:PancakeView>
                             <view:PancakeView BackgroundColor="Black"
@@ -210,7 +200,6 @@
                                        TextColor="White"
                                        VerticalOptions="Center" />
                             </view:PancakeView>
-
                         </StackLayout>
                     </StackLayout>
                 </StackLayout>

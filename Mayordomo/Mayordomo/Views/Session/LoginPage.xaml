@@ -54,13 +54,11 @@
 
 
 
-                            <view:PancakeView Padding="10,15"
-                                              BackgroundColor="#dadada"
-                                              CornerRadius="4">
+                            <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="Android" Value="10,5" />
-                                        <On Platform="iOS" Value="10,15" />
+                                        <On Platform="iOS" Value="10,10" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
                                 <Grid>
@@ -86,19 +84,18 @@
                                            Grid.Column="0"
                                            Grid.ColumnSpan="2"
                                            FontFamily="RRegular"
+                                           Keyboard="Email"
                                            Placeholder="Correo"
                                            PlaceholderColor="Gray"
-                                           Text="{Binding User}"
+                                           Text="{Binding Email}"
                                            TextColor="#1C2E29" />
                                 </Grid>
                             </view:PancakeView>
-                            <view:PancakeView Padding="10,15"
-                                              BackgroundColor="#dadada"
-                                              CornerRadius="4">
+                            <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="Android" Value="10,5" />
-                                        <On Platform="iOS" Value="10,15" />
+                                        <On Platform="iOS" Value="10,10" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
                                 <Grid>
@@ -124,6 +121,7 @@
                                            Grid.ColumnSpan="2"
                                            FontFamily="RRegular"
                                            IsPassword="True"
+                                           Keyboard="Chat"
                                            Placeholder="Contraseña"
                                            PlaceholderColor="Gray"
                                            Text="{Binding Password}"
