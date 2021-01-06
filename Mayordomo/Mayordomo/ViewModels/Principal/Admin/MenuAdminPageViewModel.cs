@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
+using Mayordomo.DataBases;
 using Mayordomo.Fonts;
 using Mayordomo.Models.Admin;
 using Mayordomo.ViewModels.Base;
@@ -22,22 +24,32 @@ namespace Mayordomo.ViewModels.Principal.Admin
         #endregion
 
         #region Methods
-        public void Menu(MenuAdmin menu)
+        public async void Menu(MenuAdmin menu)
         {
             try
             {
                 App.Master.IsPresented = false;
                 if(menu.Title == "Inicio")
                 {
-                    App.Master.Detail.Navigation.PopToRootAsync(true);
+                    await App.Master.Detail.Navigation.PopToRootAsync(true);
                 }
                 else if(menu.Title == "Usuarios")
                 {
-                    App.Master.Detail.Navigation.PushAsync(new Views.Principal.Admin.Pages.UsersAdminPage());
+                    await App.Master.Detail.Navigation.PushAsync(new Views.Principal.Admin.Pages.UsersAdminPage());
                 }
                 else if(menu.Title == "Celulas")
                 {
-                    App.Master.Detail.Navigation.PushAsync(new Views.Principal.Admin.Pages.CelulasAdminPage());
+                    await App.Master.Detail.Navigation.PushAsync(new Views.Principal.Admin.Pages.CelulasAdminPage());
+                }
+                else if(menu.Title == "Cerrar sesión")
+                {
+                    var answer = await App.Master.DisplayAlert("Mayordomo", "Desea cerrar sesión", "Si", "No");
+                    if(answer)
+                    {
+                        DbContext.Instance.DeleteUser();
+                        DbContext.Instance.DeleteToken();
+                        App.Current.MainPage = App.Navigation(new Views.Presentation.PresentationPage());
+                    }
                 }
             }
             catch(Exception ex)
@@ -49,7 +61,9 @@ namespace Mayordomo.ViewModels.Principal.Admin
         {
             try
             {
-                foreach(var item in ListMenu)
+                if (menu.Title == "Cerrar sesión")
+                    return;
+                foreach (var item in ListMenu)
                 {
                     if (item.Title == menu.Title)
                         item.BackgroundColor = Color.FromHex("#2E2E2E");
@@ -85,6 +99,13 @@ namespace Mayordomo.ViewModels.Principal.Admin
                 {
                     Title = "Celulas",
                     Img = FontAwesome.Celula,
+                    FontFamily = "Solid",
+                    BackgroundColor = Color.Black
+                });
+                ListMenu.Add(new MenuAdmin
+                {
+                    Title = "Cerrar sesión",
+                    Img = "",
                     FontFamily = "Solid",
                     BackgroundColor = Color.Black
                 });

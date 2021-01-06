@@ -2,7 +2,78 @@
 <ContentPage x:Class="Mayordomo.Views.Principal.Admin.DashboardAdminPage"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:font="clr-namespace:Mayordomo.Fonts"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              Title="Inicio"
              BackgroundColor="White">
-    <ContentPage.Content />
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="Auto,*">
+                <Grid Grid.Row="0"
+                      Padding="20,10"
+                      ColumnDefinitions="*,*">
+                    <pancake:PancakeView Grid.Column="0"
+                                         Padding="10"
+                                         BackgroundColor="White"
+                                         CornerRadius="10">
+                        <pancake:PancakeView.Shadow>
+                            <pancake:DropShadow BlurRadius="10"
+                                                Opacity="0.5"
+                                                Offset="1,0"
+                                                Color="Gray" />
+                        </pancake:PancakeView.Shadow>
+                        <Grid RowDefinitions="Auto,*" RowSpacing="0">
+                            <Image Grid.Row="0">
+                                <Image.Source>
+                                    <FontImageSource FontFamily="LightPro"
+                                                     Glyph="{x:Static font:FontAwesome.NewUser}"
+                                                     Size="30"
+                                                     Color="Black" />
+                                </Image.Source>
+                            </Image>
+                            <Grid Grid.Row="1"
+                                  IsVisible="{Binding IsVisibleSuccess}"
+                                  RowSpacing="0">
+                                <forms:AnimationView Grid.Row="0"
+                                                     Margin="0,0,0,0"
+                                                     Animation="calendar.json"
+                                                     AutoPlay="True"
+                                                     HeightRequest="100"
+                                                     RepeatMode="Infinite"
+                                                     WidthRequest="100" />
+                                <Label Grid.Row="0"
+                                       Margin="0,0,0,0"
+                                       FontAttributes="Bold"
+                                       FontFamily="RBold"
+                                       FontSize="16"
+                                       HorizontalOptions="Center"
+                                       Text="Sin pendientes"
+                                       TextColor="Black"
+                                       VerticalOptions="End" />
+                            </Grid>
+                            <StackLayout Grid.Row="1" IsVisible="{Binding IsVisibleUser}">
+                                <Label Margin="0,0,0,0"
+                                       FontAttributes="Bold"
+                                       FontFamily="RBold"
+                                       FontSize="34"
+                                       HorizontalOptions="Center"
+                                       Text="{Binding CountUser}"
+                                       TextColor="Red"
+                                       VerticalOptions="Start" />
+                                <Label Margin="0,0,0,0"
+                                       FontAttributes="Bold"
+                                       FontFamily="RBold"
+                                       FontSize="16"
+                                       HorizontalOptions="Center"
+                                       Text="Usuarios"
+                                       TextColor="Black"
+                                       VerticalOptions="Start" />
+                            </StackLayout>
+                        </Grid>
+                    </pancake:PancakeView>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

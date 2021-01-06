@@ -36,7 +36,7 @@
                                   CornerRadius="4">
                     <view:PancakeView.Padding>
                         <OnPlatform x:TypeArguments="Thickness">
-                            <On Platform="Android" Value="10,5" />
+                            <On Platform="Android" Value="10,0" />
                             <On Platform="iOS" Value="10,10" />
                         </OnPlatform>
                     </view:PancakeView.Padding>
@@ -77,7 +77,7 @@
                                   Margin="20,20,20,20"
                                   BackgroundColor="Black"
                                   CornerRadius="30"
-                                  HeightRequest="60"
+                                  HeightRequest="55"
                                   IsEnabled="{Binding IsEnabled}">
                     <view:PancakeView.Shadow>
                         <view:DropShadow BlurRadius="5"

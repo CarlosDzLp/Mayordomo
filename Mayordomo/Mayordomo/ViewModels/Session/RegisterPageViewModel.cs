@@ -74,7 +74,11 @@ namespace Mayordomo.ViewModels.Session
                     Toast("Ingrese una contraseña");
                     return;
                 }
-
+                if(string.IsNullOrWhiteSpace(Address))
+                {
+                    Toast("Ingrese una direccion");
+                    return;
+                }
                 var user = new UserModel()
                 {
                     Address = Address,

@@ -68,7 +68,7 @@
                             <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
-                                        <On Platform="Android" Value="10,5" />
+                                        <On Platform="Android" Value="10,0" />
                                         <On Platform="iOS" Value="10,10" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
@@ -86,7 +86,7 @@
                             <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
-                                        <On Platform="Android" Value="10,5" />
+                                        <On Platform="Android" Value="10,0" />
                                         <On Platform="iOS" Value="10,10" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
@@ -104,7 +104,7 @@
                             <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
-                                        <On Platform="Android" Value="10,5" />
+                                        <On Platform="Android" Value="10,0" />
                                         <On Platform="iOS" Value="10,10" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
@@ -152,7 +152,7 @@
                             <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
                                 <view:PancakeView.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
-                                        <On Platform="Android" Value="10,5" />
+                                        <On Platform="Android" Value="10,0" />
                                         <On Platform="iOS" Value="10,10" />
                                     </OnPlatform>
                                 </view:PancakeView.Padding>
@@ -182,9 +182,25 @@
                                     </ImageButton>
                                 </Grid>
                             </view:PancakeView>
+                            <view:PancakeView BackgroundColor="#dadada" CornerRadius="4">
+                                <view:PancakeView.Padding>
+                                    <OnPlatform x:TypeArguments="Thickness">
+                                        <On Platform="Android" Value="10,0" />
+                                        <On Platform="iOS" Value="10,10" />
+                                    </OnPlatform>
+                                </view:PancakeView.Padding>
+                                <Grid>
+                                    <Editor Grid.Column="0"
+                                            HeightRequest="100"
+                                            Keyboard="Plain"
+                                            Placeholder="Direccion"
+                                            Text="{Binding Address}"
+                                            TextColor="#1C2E29" />
+                                </Grid>
+                            </view:PancakeView>
                             <view:PancakeView BackgroundColor="Black"
                                               CornerRadius="30"
-                                              HeightRequest="60">
+                                              HeightRequest="55">
                                 <view:PancakeView.Shadow>
                                     <view:DropShadow BlurRadius="5"
                                                      Offset="0,1"

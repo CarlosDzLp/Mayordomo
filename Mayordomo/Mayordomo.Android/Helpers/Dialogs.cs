@@ -1,6 +1,5 @@
-﻿using System.Threading.Tasks;
-using Android.App;
-using Dmax.Dialog;
+﻿using System;
+using System.Threading.Tasks;
 using Mayordomo.Droid.Helpers;
 using Mayordomo.Helpers;
 using Org.Aviran.CookieBar2;
@@ -12,18 +11,29 @@ namespace Mayordomo.Droid.Helpers
 {
     public class Dialogs : IDialogs
     {
-        AlertDialog dialogAlert = null;
+        //AlertDialog dialogAlert = null;
         public async Task Show(string message)
         {
-            dialogAlert = new SpotsDialog.Builder().SetContext(CrossCurrentActivity.Current.Activity).SetMessage(message).SetCancelable(false)
-                .Build();
-            dialogAlert.Show();
+            try
+            {
+                AndroidHUD.AndHUD.Shared.Show(CrossCurrentActivity.Current.Activity, message, -1, AndroidHUD.MaskType.Black, centered: true);
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
 
         public async Task Hide()
         {
-            if (dialogAlert != null)
-                dialogAlert.Dismiss();
+            try
+            {
+                AndroidHUD.AndHUD.Shared.Dismiss(CrossCurrentActivity.Current.Activity);
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
 
         public async Task Snackbar(string message, string title, TypeSnackbar typeSnackbar)

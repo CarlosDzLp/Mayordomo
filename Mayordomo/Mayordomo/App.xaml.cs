@@ -15,6 +15,9 @@ namespace Mayordomo
         public App()
         {
             InitializeComponent();
+            Device.SetFlags(new[] {
+                "SwipeView_Experimental"
+            });
             var token = DbContext.Instance.GetToken();
             if (token != null)
             {

@@ -11,9 +11,10 @@ namespace Mayordomo.Fonts
         public const string Users = "\uf500";//Solid
         public const string Eye = "\uf06e";//Solid
         public const string Hide = "\uf070";//Regular
-
+        public const string Delete = "\uf2ed";//Solid
         public const string Home= "\uf80c";
         public const string Hamburguer = "\uf0c9";//Solid
-        
+        public const string NewUser = "\uf830";//LightPro
+        public const string UserActivate = "\uf502";//LightPro
     }
 }
