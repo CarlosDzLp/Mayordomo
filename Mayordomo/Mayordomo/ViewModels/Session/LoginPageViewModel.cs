@@ -69,6 +69,7 @@ namespace Mayordomo.ViewModels.Session
                         {
                             // SI HAY TOKEN E INGRESA AL DASHBOARD
                             responseToken.UserType = response.Result.UserType;
+                            response.Result.Password = Password;
                             DbContext.Instance.InsertToken(responseToken);
                             DbContext.Instance.InsertUser(response.Result);
                             if(response.Result.UserType ==  1)

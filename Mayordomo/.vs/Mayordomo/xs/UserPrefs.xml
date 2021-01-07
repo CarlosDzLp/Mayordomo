@@ -1,28 +1,17 @@
 ﻿<Properties StartupConfiguration="{3B84C139-CCF7-4206-ADA9-39CB4E0A49D8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mayordomo/DataBases/DbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mayordomo/ViewModels/Principal/Admin/UsersAdminPageViewModel.cs">
     <Files>
-      <File FileName="Mayordomo/ViewModels/Session/LoginPageViewModel.cs" Line="72" Column="53" />
-      <File FileName="Mayordomo/DataBases/DbContext.cs" Line="53" Column="1" />
+      <File FileName="Mayordomo/ViewModels/Principal/Admin/UsersAdminPageViewModel.cs" Line="41" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mayordomo" expanded="True">
             <Node name="Mayordomo" expanded="True">
-              <Node name="DataBases" expanded="True">
-                <Node name="DbContext.cs" selected="True" />
-              </Node>
-              <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True">
                 <Node name="Principal" expanded="True">
-                  <Node name="Admin" expanded="True" />
-                </Node>
-                <Node name="Session" expanded="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Principal" expanded="True">
                   <Node name="Admin" expanded="True">
-                    <Node name="Pages" expanded="True" />
+                    <Node name="UsersAdminPageViewModel.cs" selected="True" />
                   </Node>
                 </Node>
               </Node>
@@ -50,13 +39,10 @@
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/ViewModels/Principal/Admin/UsersAdminPageViewModel.cs" relfile="Mayordomo/ViewModels/Principal/Admin/UsersAdminPageViewModel.cs" line="52" column="1" />
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/ViewModels/Principal/Admin/UsersAdminPageViewModel.cs" relfile="Mayordomo/ViewModels/Principal/Admin/UsersAdminPageViewModel.cs" line="92" column="1" />
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/Services/HttpClientMessageHandler.cs" relfile="Mayordomo/Services/HttpClientMessageHandler.cs" line="54" column="1" />
-      <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/Services/ServiceManager.cs" relfile="Mayordomo/Services/ServiceManager.cs" line="56" column="1" />
-      <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/Services/HttpClientMessageHandler.cs" relfile="Mayordomo/Services/HttpClientMessageHandler.cs" line="31" column="1" />
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/DataBases/DbContext.cs" relfile="Mayordomo/DataBases/DbContext.cs" line="55" column="1" />
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/DataBases/DbContext.cs" relfile="Mayordomo/DataBases/DbContext.cs" line="48" column="1" />
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/DataBases/DbContext.cs" relfile="Mayordomo/DataBases/DbContext.cs" line="86" column="1" />
       <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/DataBases/DbContext.cs" relfile="Mayordomo/DataBases/DbContext.cs" line="93" column="1" />
-      <Breakpoint file="/Users/carlosdiazlopez/Mayordomo/Mayordomo/Mayordomo/DataBases/DbContext.cs" relfile="Mayordomo/DataBases/DbContext.cs" line="60" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
