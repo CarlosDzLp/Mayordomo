@@ -1,4 +1,4 @@
-﻿using MayordomoApi.Entities;
+﻿using MayordomoApi.BussinesLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,39 +9,34 @@ using System.Web.Http;
 
 namespace MayordomoApi.Controllers
 {
-    //[Authorize]
-    //[RoutePrefix("api/customers")]
-
-
-    [AllowAnonymous]
+    [Authorize]
     [RoutePrefix("api/login")]
     public class LoginController : ApiController
     {
+        BLUser u = new BLUser();
+
         [HttpGet]
-        [Route("validateemail")]
-        public async Task<IHttpActionResult> ValidateEmail()
+        [Route("alluser")]
+        public async Task<IHttpActionResult> AllUser()
         {
-            return Ok(true);
+            var response = await u.AllUser();
+            return Ok(response);
         }
 
-        //[HttpPost]
-        //[Route("authenticate")]
-        //public IHttpActionResult Authenticate(LoginRequest login)
-        //{
-            //if (login == null)
-              //  return Unauthorized();
+        [HttpGet]
+        [Route("activateaccountuser")]
+        public async Task<IHttpActionResult> ActivateAccountUser(Guid IdUser)
+        {
+            var response = await u.ActivateAccountUser(IdUser);
+            return Ok(response);
+        }
 
-            //TODO: Validate credentials Correctly, this code is only for demo !!
-            //bool isCredentialValid = (login.Password == "123456");
-            //if (isCredentialValid)
-            //{
-               // var token = TokenGenerator.GenerateTokenJwt(login.Username);
-              //  return Ok(token);
-            //}
-            //else
-            //{
-             //   return Unauthorized();
-           // }
-        //}
+        [HttpDelete]
+        [Route("DeleteAccount")]
+        public async Task<IHttpActionResult> DeleteAccount(Guid IdUser)
+        {
+            var response = await u.DeleteAccount(IdUser);
+            return Ok(response);
+        }
     }
 }

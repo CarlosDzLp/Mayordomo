@@ -12,6 +12,8 @@ namespace MayordomoApi.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class CandeleroEntities : DbContext
     {
@@ -26,5 +28,154 @@ namespace MayordomoApi.Models
         }
     
         public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<Celulas> Celulas { get; set; }
+        public virtual DbSet<TypeMember> TypeMember { get; set; }
+    
+        public virtual int spActivateAccount(Nullable<System.Guid> idUser)
+        {
+            var idUserParameter = idUser.HasValue ?
+                new ObjectParameter("IdUser", idUser) :
+                new ObjectParameter("IdUser", typeof(System.Guid));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spActivateAccount", idUserParameter);
+        }
+    
+        public virtual int spDeleteAccount(Nullable<System.Guid> idUser)
+        {
+            var idUserParameter = idUser.HasValue ?
+                new ObjectParameter("IdUser", idUser) :
+                new ObjectParameter("IdUser", typeof(System.Guid));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDeleteAccount", idUserParameter);
+        }
+    
+        public virtual int spInsUser(string name, string lastName, string address, string email, string password, string photo)
+        {
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
+    
+            var lastNameParameter = lastName != null ?
+                new ObjectParameter("LastName", lastName) :
+                new ObjectParameter("LastName", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var passwordParameter = password != null ?
+                new ObjectParameter("Password", password) :
+                new ObjectParameter("Password", typeof(string));
+    
+            var photoParameter = photo != null ?
+                new ObjectParameter("Photo", photo) :
+                new ObjectParameter("Photo", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsUser", nameParameter, lastNameParameter, addressParameter, emailParameter, passwordParameter, photoParameter);
+        }
+    
+        public virtual ObjectResult<spSelLogin_Result> spSelLogin(string email, string password)
+        {
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var passwordParameter = password != null ?
+                new ObjectParameter("Password", password) :
+                new ObjectParameter("Password", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelLogin_Result>("spSelLogin", emailParameter, passwordParameter);
+        }
+    
+        public virtual ObjectResult<spSelUser_Result> spSelUser()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelUser_Result>("spSelUser");
+        }
+    
+        public virtual ObjectResult<spSelValidateEmail_Result> spSelValidateEmail(string email)
+        {
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelValidateEmail_Result>("spSelValidateEmail", emailParameter);
+        }
+    
+        public virtual int spDelCelulas(Nullable<System.Guid> idCelula)
+        {
+            var idCelulaParameter = idCelula.HasValue ?
+                new ObjectParameter("IdCelula", idCelula) :
+                new ObjectParameter("IdCelula", typeof(System.Guid));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDelCelulas", idCelulaParameter);
+        }
+    
+        public virtual int spInsCelulas(string nombre, string address, string nombrePersona, Nullable<decimal> latitude, Nullable<decimal> longitude)
+        {
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("Nombre", nombre) :
+                new ObjectParameter("Nombre", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            var nombrePersonaParameter = nombrePersona != null ?
+                new ObjectParameter("NombrePersona", nombrePersona) :
+                new ObjectParameter("NombrePersona", typeof(string));
+    
+            var latitudeParameter = latitude.HasValue ?
+                new ObjectParameter("Latitude", latitude) :
+                new ObjectParameter("Latitude", typeof(decimal));
+    
+            var longitudeParameter = longitude.HasValue ?
+                new ObjectParameter("Longitude", longitude) :
+                new ObjectParameter("Longitude", typeof(decimal));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsCelulas", nombreParameter, addressParameter, nombrePersonaParameter, latitudeParameter, longitudeParameter);
+        }
+    
+        public virtual ObjectResult<spSelCelulas_Result> spSelCelulas()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelCelulas_Result>("spSelCelulas");
+        }
+    
+        public virtual int spUpdCelulas(Nullable<System.Guid> idCelula, string nombre, string address, string nombrePersona, Nullable<decimal> latitude, Nullable<decimal> longitude)
+        {
+            var idCelulaParameter = idCelula.HasValue ?
+                new ObjectParameter("IdCelula", idCelula) :
+                new ObjectParameter("IdCelula", typeof(System.Guid));
+    
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("Nombre", nombre) :
+                new ObjectParameter("Nombre", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            var nombrePersonaParameter = nombrePersona != null ?
+                new ObjectParameter("NombrePersona", nombrePersona) :
+                new ObjectParameter("NombrePersona", typeof(string));
+    
+            var latitudeParameter = latitude.HasValue ?
+                new ObjectParameter("Latitude", latitude) :
+                new ObjectParameter("Latitude", typeof(decimal));
+    
+            var longitudeParameter = longitude.HasValue ?
+                new ObjectParameter("Longitude", longitude) :
+                new ObjectParameter("Longitude", typeof(decimal));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdCelulas", idCelulaParameter, nombreParameter, addressParameter, nombrePersonaParameter, latitudeParameter, longitudeParameter);
+        }
+    
+        public virtual ObjectResult<spSelTypeMember_Result> spSelTypeMember()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelTypeMember_Result>("spSelTypeMember");
+        }
     }
 }

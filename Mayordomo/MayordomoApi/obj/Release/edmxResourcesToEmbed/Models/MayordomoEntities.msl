@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EcoscadiCandelerotxModelStoreContainer" CdmEntityContainer="CandeleroEntities">
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="EcoscadiCandelerotxModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spActivateAccount" FunctionName="EcoscadiCandelerotxModel.Store.spActivateAccount" />
+    <FunctionImportMapping FunctionImportName="spDeleteAccount" FunctionName="EcoscadiCandelerotxModel.Store.spDeleteAccount" />
+    <FunctionImportMapping FunctionImportName="spInsUser" FunctionName="EcoscadiCandelerotxModel.Store.spInsUser" />
+    <FunctionImportMapping FunctionImportName="spSelLogin" FunctionName="EcoscadiCandelerotxModel.Store.spSelLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EcoscadiCandelerotxModel.spSelLogin_Result">
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelUser" FunctionName="EcoscadiCandelerotxModel.Store.spSelUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EcoscadiCandelerotxModel.spSelUser_Result">
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelValidateEmail" FunctionName="EcoscadiCandelerotxModel.Store.spSelValidateEmail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EcoscadiCandelerotxModel.spSelValidateEmail_Result">
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Celulas">
+      <EntityTypeMapping TypeName="EcoscadiCandelerotxModel.Celulas">
+        <MappingFragment StoreEntitySet="Celulas">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="NombrePersona" ColumnName="NombrePersona" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdCelula" ColumnName="IdCelula" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spDelCelulas" FunctionName="EcoscadiCandelerotxModel.Store.spDelCelulas" />
+    <FunctionImportMapping FunctionImportName="spInsCelulas" FunctionName="EcoscadiCandelerotxModel.Store.spInsCelulas" />
+    <FunctionImportMapping FunctionImportName="spSelCelulas" FunctionName="EcoscadiCandelerotxModel.Store.spSelCelulas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EcoscadiCandelerotxModel.spSelCelulas_Result">
+          <ScalarProperty Name="IdCelula" ColumnName="IdCelula" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="NombrePersona" ColumnName="NombrePersona" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spUpdCelulas" FunctionName="EcoscadiCandelerotxModel.Store.spUpdCelulas" />
+    <EntitySetMapping Name="TypeMember">
+      <EntityTypeMapping TypeName="EcoscadiCandelerotxModel.TypeMember">
+        <MappingFragment StoreEntitySet="TypeMember">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IdMember" ColumnName="IdMember" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spSelTypeMember" FunctionName="EcoscadiCandelerotxModel.Store.spSelTypeMember">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EcoscadiCandelerotxModel.spSelTypeMember_Result">
+          <ScalarProperty Name="IdMember" ColumnName="IdMember" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

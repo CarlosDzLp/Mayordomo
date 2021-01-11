@@ -83,3 +83,4 @@ C:\Users\LVLA\Documents\GitHub\Mayordomo\Mayordomo\MayordomoApi\obj\Debug\Mayord
 C:\Users\LVLA\Documents\GitHub\Mayordomo\Mayordomo\MayordomoApi\obj\Debug\MayordomoApi.csproj.CopyComplete
 C:\Users\LVLA\Documents\GitHub\Mayordomo\Mayordomo\MayordomoApi\obj\Debug\MayordomoApi.dll
 C:\Users\LVLA\Documents\GitHub\Mayordomo\Mayordomo\MayordomoApi\obj\Debug\MayordomoApi.pdb
+C:\Users\LVLA\Documents\GitHub\Mayordomo\Mayordomo\MayordomoApi\obj\Debug\MayordomoApi.csprojAssemblyReference.cache
