@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EcoscadiCandelerotxModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="IdUser" />
+    </Key>
+    <Property Name="IdUser" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Photo" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="UserType" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="CandeleroEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="User" EntityType="Self.User" />
+    <FunctionImport Name="spActivateAccount">
+      <Parameter Name="IdUser" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="spDeleteAccount">
+      <Parameter Name="IdUser" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="spInsUser">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="Address" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="Photo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spSelLogin" ReturnType="Collection(EcoscadiCandelerotxModel.spSelLogin_Result)">
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spSelUser" ReturnType="Collection(EcoscadiCandelerotxModel.spSelUser_Result)" />
+    <FunctionImport Name="spSelValidateEmail" ReturnType="Collection(EcoscadiCandelerotxModel.spSelValidateEmail_Result)">
+      <Parameter Name="Email" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="Celulas" EntityType="EcoscadiCandelerotxModel.Celulas" />
+    <FunctionImport Name="spDelCelulas">
+      <Parameter Name="IdCelula" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="spInsCelulas">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Address" Mode="In" Type="String" />
+      <Parameter Name="NombrePersona" Mode="In" Type="String" />
+      <Parameter Name="Latitude" Mode="In" Type="Decimal" />
+      <Parameter Name="Longitude" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="spSelCelulas" ReturnType="Collection(EcoscadiCandelerotxModel.spSelCelulas_Result)" />
+    <FunctionImport Name="spUpdCelulas">
+      <Parameter Name="IdCelula" Mode="In" Type="Guid" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Address" Mode="In" Type="String" />
+      <Parameter Name="NombrePersona" Mode="In" Type="String" />
+      <Parameter Name="Latitude" Mode="In" Type="Decimal" />
+      <Parameter Name="Longitude" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <EntitySet Name="TypeMember" EntityType="EcoscadiCandelerotxModel.TypeMember" />
+    <FunctionImport Name="spSelTypeMember" ReturnType="Collection(EcoscadiCandelerotxModel.spSelTypeMember_Result)" />
+  </EntityContainer>
+  <ComplexType Name="spSelLogin_Result">
+    <Property Type="Guid" Name="IdUser" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Photo" Nullable="true" MaxLength="5000" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+    <Property Type="Int32" Name="UserType" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spSelUser_Result">
+    <Property Type="Guid" Name="IdUser" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Photo" Nullable="true" MaxLength="5000" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+    <Property Type="Int32" Name="UserType" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spSelValidateEmail_Result">
+    <Property Type="Guid" Name="IdUser" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Photo" Nullable="true" MaxLength="5000" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+    <Property Type="Int32" Name="UserType" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="Celulas">
+    <Key>
+      <PropertyRef Name="IdCelula" />
+    </Key>
+    <Property Name="IdCelula" Type="Guid" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="5000" FixedLength="false" Unicode="false" />
+    <Property Name="NombrePersona" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Latitude" Type="Decimal" Precision="12" Scale="9" />
+    <Property Name="Longitude" Type="Decimal" Precision="12" Scale="9" />
+    <Property Name="Status" Type="Boolean" />
+  </EntityType>
+  <ComplexType Name="spSelCelulas_Result">
+    <Property Type="Guid" Name="IdCelula" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="NombrePersona" Nullable="false" MaxLength="200" />
+    <Property Type="Decimal" Name="Latitude" Nullable="true" Precision="12" Scale="9" />
+    <Property Type="Decimal" Name="Longitude" Nullable="true" Precision="12" Scale="9" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="TypeMember">
+    <Key>
+      <PropertyRef Name="IdMember" />
+    </Key>
+    <Property Name="IdMember" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Boolean" />
+  </EntityType>
+  <ComplexType Name="spSelTypeMember_Result">
+    <Property Type="Guid" Name="IdMember" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+</Schema>

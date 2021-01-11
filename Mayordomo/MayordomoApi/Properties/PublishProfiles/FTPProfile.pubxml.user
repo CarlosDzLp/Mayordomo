@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABiw/JkzRb0KgoqcTMEclIAAAAAACAAAAAAAQZgAAAAEAACAAAACAtC1G4YPrzONovFIV2+dN23NxgIBC+b5nWluVYC50mAAAAAAOgAAAAAIAACAAAACch7ZeEemlT/pPo97k689gjoPM7of+baEPxRaydRZSpCAAAADbl5xHBNDoIEXA8va+AJSgU/5kv9jGm659uLEJ34cSFEAAAACZCNiMH9iZJI7fG31sSz0zzJGRT0DHmebrAZ6gG0/oDVNkSH+gjBBdz0DU2o1NL4px+DVR5fplyv3JF90y33rl</EncryptedPassword>
+    <_PublishTargetUrl>ftp://65.99.252.110/http://candelerodeorotuxtla.ecoscadiz.com.mx/</_PublishTargetUrl>
+  </PropertyGroup>
+</Project>

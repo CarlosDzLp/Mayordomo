@@ -6,6 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="8d741ca1f8884f9292a493b38c00d3fb" Name="Diagram1">
         <EntityTypeShape EntityType="EcoscadiCandelerotxModel.User" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoscadiCandelerotxModel.Celulas" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="EcoscadiCandelerotxModel.TypeMember" Width="1.5" PointX="0.75" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
