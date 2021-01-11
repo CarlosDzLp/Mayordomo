@@ -40,12 +40,14 @@ namespace Mayordomo.ViewModels.Principal.Admin
 
         #region CommandExecuted
         private PopupDialogResponse popup = null;
+        private UserModel Delete { get; set; }
         private void DeleteUserCommandExecuted(UserModel user)
         {
             try
             {
                 if (user == null)
                     return;
+                Delete = user;
                 popup = new PopupDialogResponse("¿Desea eliminar este usuario?"
                     , "Eliminar", Enums.PopupDialogsEnum.Delete);
                 popup.PopupResponse += PopupPopupResponseDelete;
@@ -57,14 +59,31 @@ namespace Mayordomo.ViewModels.Principal.Admin
             }
         }
 
-        private void PopupPopupResponseDelete(object sender, Enums.PopupState e)
+        private async void PopupPopupResponseDelete(object sender, Enums.PopupState e)
         {
             try
             {
                 popup.PopupResponse -= PopupPopupResponseDelete;
                 if(e == Enums.PopupState.Ok)
                 {
-
+                    var token = DbContext.Instance.GetToken();
+                    var response = await client.Delete<Response<bool>>($"api/login/DeleteAccount?IdUser={Delete.IdUser}", token.Token);
+                    if(response != null)
+                    {
+                        if(response.Result)
+                        {
+                            Snack("Se ha eliminado correctamente", "Mayordomo", Helpers.TypeSnackbar.Success);
+                            await LoadUser();
+                        }
+                        else
+                        {
+                            Toast(response.Message);
+                        }
+                    }
+                    else
+                    {
+                        Snack("Hubo un error intente mas tarde", "Mayordomo", Helpers.TypeSnackbar.Error);
+                    }
                 }
             }
             catch(Exception ex)

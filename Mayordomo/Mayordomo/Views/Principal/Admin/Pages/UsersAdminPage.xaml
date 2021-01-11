@@ -22,26 +22,32 @@
                     <SwipeView>
                         <SwipeView.RightItems>
                             <SwipeItems Mode="Reveal">
-                                <SwipeItem BackgroundColor="Red"
-                                           Command="{Binding Path=BindingContext.DeleteUserCommand, Source={x:Reference collectionviewuser}}"
-                                           CommandParameter="{Binding .}">
-                                    <SwipeItem.IconImageSource>
-                                        <FontImageSource FontFamily="Solid"
-                                                         Glyph="{x:Static font:FontAwesome.Delete}"
-                                                         Size="25"
-                                                         Color="White" />
-                                    </SwipeItem.IconImageSource>
-                                </SwipeItem>
-                                <SwipeItem BackgroundColor="Black"
-                                           Command="{Binding Path=BindingContext.ActivatedUserCommand, Source={x:Reference collectionviewuser}}"
-                                           CommandParameter="{Binding .}">
-                                    <SwipeItem.IconImageSource>
-                                        <FontImageSource FontFamily="Solid"
-                                                         Glyph="{x:Static font:FontAwesome.UserActivate}"
-                                                         Size="25"
-                                                         Color="White" />
-                                    </SwipeItem.IconImageSource>
-                                </SwipeItem>
+                                <SwipeItemView Command="{Binding Path=BindingContext.DeleteUserCommand, Source={x:Reference collectionviewuser}}" CommandParameter="{Binding .}">
+                                    <Grid BackgroundColor="Red" WidthRequest="100">
+                                        <Image HorizontalOptions="Center" VerticalOptions="Center">
+                                            <Image.Source>
+                                                <FontImageSource FontFamily="Solid"
+                                                                 Glyph="{x:Static font:FontAwesome.Delete}"
+                                                                 Size="25"
+                                                                 Color="White" />
+                                            </Image.Source>
+                                        </Image>
+                                    </Grid>
+                                </SwipeItemView>
+                                <SwipeItemView BackgroundColor="Black"
+                                               Command="{Binding Path=BindingContext.ActivatedUserCommand, Source={x:Reference collectionviewuser}}"
+                                               CommandParameter="{Binding .}">
+                                    <Grid WidthRequest="100">
+                                        <Image HorizontalOptions="Center" VerticalOptions="Center">
+                                            <Image.Source>
+                                                <FontImageSource FontFamily="Solid"
+                                                                 Glyph="{x:Static font:FontAwesome.UserActivate}"
+                                                                 Size="25"
+                                                                 Color="White" />
+                                            </Image.Source>
+                                        </Image>
+                                    </Grid>
+                                </SwipeItemView>
                             </SwipeItems>
                         </SwipeView.RightItems>
                         <SwipeView.Content>
