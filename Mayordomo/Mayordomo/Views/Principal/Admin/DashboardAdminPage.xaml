@@ -23,6 +23,9 @@
                                                 Offset="1,0"
                                                 Color="Gray" />
                         </pancake:PancakeView.Shadow>
+                        <pancake:PancakeView.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding UserCommand}" />
+                        </pancake:PancakeView.GestureRecognizers>
                         <Grid RowDefinitions="Auto,*" RowSpacing="0">
                             <Image Grid.Row="0">
                                 <Image.Source>

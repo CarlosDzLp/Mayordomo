@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Mayordomo.DataBases;
 using Mayordomo.Models.User;
 using Mayordomo.Models.WSResponse;
@@ -24,7 +25,26 @@ namespace Mayordomo.ViewModels.Principal.Admin
         #region Constructor
         public DashboardAdminPageViewModel()
         {
+            UserCommand = new Command(async () => await UserCommandExecuted());
+        }
+        #endregion
 
+        #region Command
+        public ICommand UserCommand { get; set; }
+        #endregion
+
+        #region CommandExecuted
+        private async Task UserCommandExecuted()
+        {
+            try
+            {
+                if(CountUser > 0)
+                    await App.Master.Detail.Navigation.PushAsync(new Views.Principal.Admin.Pages.UsersAdminPage());
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
         #endregion
 

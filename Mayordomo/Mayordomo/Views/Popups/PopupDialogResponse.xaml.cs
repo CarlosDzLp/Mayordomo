@@ -7,10 +7,26 @@ namespace Mayordomo.Views.Popups
     public partial class PopupDialogResponse : Rg.Plugins.Popup.Pages.PopupPage
     {
         public event EventHandler<PopupState> PopupResponse;
-        public PopupDialogResponse(string message,string btntext, PopupDialogsEnum dialogsEnum)
+        public PopupDialogResponse(string message,string btntext, PopupDialogsEnum dialogsEnum,string image = null)
         {
             InitializeComponent();
-            DataPopup(message, btntext, dialogsEnum);
+            if(string.IsNullOrWhiteSpace(image))
+            {
+                //esta vacio el image
+                lottieanimation.IsVisible = true;
+                frameimage.IsVisible = false;
+                imgpopup.IsVisible = false;
+                DataPopup(message, btntext, dialogsEnum);
+            }
+            else
+            {
+                imgpopup.IsVisible = true;
+                imgpopup.Source = image;
+                frameimage.IsVisible = true;
+                lottieanimation.IsVisible = false;
+                lblmessage.Text = message;
+                btn.Text = btntext;
+            }
         }
 
         #region Methods

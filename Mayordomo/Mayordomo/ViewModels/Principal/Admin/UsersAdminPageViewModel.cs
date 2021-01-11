@@ -8,6 +8,8 @@ using Mayordomo.Models.User;
 using Mayordomo.Models.WSResponse;
 using Mayordomo.Services;
 using Mayordomo.ViewModels.Base;
+using Mayordomo.Views.Popups;
+using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 
 namespace Mayordomo.ViewModels.Principal.Admin
@@ -26,8 +28,8 @@ namespace Mayordomo.ViewModels.Principal.Admin
         public UsersAdminPageViewModel()
         {
             _ = LoadUser();
-            DeleteUserCommand = new Command<UserModel>(async(s) => await DeleteUserCommandExecuted(s));
-            ActivatedUserCommand = new Command<UserModel>(async (s) => await ActivatedUserCommandExecuted(s));
+            DeleteUserCommand = new Command<UserModel>(DeleteUserCommandExecuted);
+            ActivatedUserCommand = new Command<UserModel>(ActivatedUserCommandExecuted);
         }
         #endregion
 
@@ -37,24 +39,68 @@ namespace Mayordomo.ViewModels.Principal.Admin
         #endregion
 
         #region CommandExecuted
-        private async Task DeleteUserCommandExecuted(UserModel user)
+        private PopupDialogResponse popup = null;
+        private void DeleteUserCommandExecuted(UserModel user)
         {
             try
             {
-
+                if (user == null)
+                    return;
+                popup = new PopupDialogResponse("¿Desea eliminar este usuario?"
+                    , "Eliminar", Enums.PopupDialogsEnum.Delete);
+                popup.PopupResponse += PopupPopupResponseDelete;
+                PopupNavigation.Instance.PushAsync(popup);
             }
             catch(Exception ex)
             {
 
             }
         }
-        private async Task ActivatedUserCommandExecuted(UserModel user)
+
+        private void PopupPopupResponseDelete(object sender, Enums.PopupState e)
         {
             try
             {
+                popup.PopupResponse -= PopupPopupResponseDelete;
+                if(e == Enums.PopupState.Ok)
+                {
+
+                }
+            }
+            catch(Exception ex)
+            {
 
             }
+        }
+
+        private void ActivatedUserCommandExecuted(UserModel user)
+        {
+            try
+            {
+                if (user == null)
+                    return;
+                popup = new PopupDialogResponse("¿Desea activar este usuario?"
+                    , "Activar", Enums.PopupDialogsEnum.Question, "https://post.healthline.com/wp-content/uploads/2020/05/435791-Forget-You-Have-Plants-11-Types-That-Will-Forgive-You_Thumnail.jpg");
+                popup.PopupResponse += PopupPopupResponseActivate;
+                PopupNavigation.Instance.PushAsync(popup);
+            }
             catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void PopupPopupResponseActivate(object sender, Enums.PopupState e)
+        {
+            try
+            {
+                popup.PopupResponse -= PopupPopupResponseActivate;
+                if (e == Enums.PopupState.Ok)
+                {
+
+                }
+            }
+            catch(Exception ex)
             {
 
             }

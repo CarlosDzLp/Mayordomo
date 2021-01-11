@@ -17,6 +17,7 @@ namespace Mayordomo.Views.Principal.Admin
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            vm.CountUser = 0;
             vm.LoadUserInactive();
         }
     }
