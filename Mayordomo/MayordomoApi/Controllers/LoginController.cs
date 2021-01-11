@@ -32,7 +32,7 @@ namespace MayordomoApi.Controllers
         }
 
         [HttpDelete]
-        [Route("DeleteAccount")]
+        [Route("deleteAccount")]
         public async Task<IHttpActionResult> DeleteAccount(Guid IdUser)
         {
             var response = await u.DeleteAccount(IdUser);
