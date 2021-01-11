@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using Mayordomo.Models.Authenticate;
 using Mayordomo.Models.User;
 using SQLite;
 using Xamarin.Forms;
@@ -31,6 +33,7 @@ namespace Mayordomo.DataBases
             {
                 var dbPath = DependencyService.Get<IPathBase>().PathFile();
                 connection = new SQLiteConnection(dbPath, true);
+                connection.CreateTable<TokenResponse>();
                 connection.CreateTable<UserModel>();
             }
             catch (Exception ex)
@@ -39,7 +42,6 @@ namespace Mayordomo.DataBases
             }
         }
         #endregion
-
 
         #region User
         public void InsertUser(UserModel user)
@@ -58,7 +60,8 @@ namespace Mayordomo.DataBases
         {
             try
             {
-                return connection.Table<UserModel>().FirstOrDefault();
+                var query = connection.Table<UserModel>().FirstOrDefault();
+                return query;
             }
             catch (Exception ex)
             {
@@ -73,6 +76,45 @@ namespace Mayordomo.DataBases
             }
             catch (Exception ex)
             {
+
+            }
+        }
+        #endregion
+
+        #region Token
+        public void InsertToken(TokenResponse token)
+        {
+            try
+            {
+                connection.DeleteAll<TokenResponse>();
+                connection.Insert(token);
+            }
+            catch(Exception ex)
+            {
+
+            }
+        }
+        public TokenResponse GetToken()
+        {
+            try
+            {
+                var query = connection.Table<TokenResponse>().FirstOrDefault();
+                return query;
+            }
+            catch(Exception ex)
+            {
+                return new TokenResponse();
+            }
+        }
+        public void DeleteToken()
+        {
+            try
+            {
+                connection.DeleteAll<TokenResponse>();
+            }
+            catch(Exception ex)
+            {
+
             }
         }
         #endregion

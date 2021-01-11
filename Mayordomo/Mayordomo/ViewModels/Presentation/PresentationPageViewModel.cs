@@ -30,7 +30,7 @@ namespace Mayordomo.ViewModels.Presentation
         #region CommandExecuted
         private void RegisterPageCommandExecuted()
         {
-            App.NavigationAsync.PushAsync(new Views.Session.RegisterPage());
+            App.NavigationAsync.PushAsync(new Views.Session.EmailValidatePage());
         }
 
         private void LoginPageCommandExecuted()

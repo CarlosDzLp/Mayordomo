@@ -12,19 +12,18 @@ namespace Mayordomo.Views.Session
         public LoginPage()
         {
             InitializeComponent();
-            entryuser.Keyboard = Keyboard.Create(KeyboardFlags.None);
             this.BindingContext = new LoginPageViewModel();
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            MessagingService.Current.SendMessage<MessageKeys>("StatusBar", new MessageKeys { StatusBarTransparent = true, ColorHex = "#06214B" });
+            //MessagingService.Current.SendMessage<MessageKeys>("StatusBar", new MessageKeys { StatusBarTransparent = true, ColorHex = "#06214B" });
         }
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            MessagingService.Current.Unsubscribe("StatusBar");
+            //MessagingService.Current.Unsubscribe("StatusBar");
         }
 
         void TapGestureRecognizer_Tapped(System.Object sender, System.EventArgs e)

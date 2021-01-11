@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿
 using Foundation;
-using Lottie.Forms.iOS.Renderers;
 using UIKit;
 
 namespace Mayordomo.iOS
@@ -27,8 +23,6 @@ namespace Mayordomo.iOS
             global::Xamarin.Forms.Forms.Init();
             App.ScreenHeight = (int)UIScreen.MainScreen.Bounds.Height;
             App.ScreenWidth = (int)UIScreen.MainScreen.Bounds.Width;
-            AnimationViewRenderer.Init();
-            Rg.Plugins.Popup.Popup.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

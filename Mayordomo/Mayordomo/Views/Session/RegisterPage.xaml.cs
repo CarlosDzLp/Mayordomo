@@ -9,21 +9,21 @@ namespace Mayordomo.Views.Session
 {
     public partial class RegisterPage : ContentPage
     {
-        public RegisterPage()
+        public RegisterPage(string Email)
         {
             InitializeComponent();
-            this.BindingContext = new RegisterPageViewModel();
+            this.BindingContext = new RegisterPageViewModel(Email);
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            MessagingService.Current.SendMessage<MessageKeys>("StatusBar", new MessageKeys { StatusBarTransparent = false, ColorHex = "#1C2E29" });
+            //MessagingService.Current.SendMessage<MessageKeys>("StatusBar", new MessageKeys { StatusBarTransparent = false, ColorHex = "#1C2E29" });
             //
         }
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            MessagingService.Current.Unsubscribe("StatusBar");
+            //MessagingService.Current.Unsubscribe("StatusBar");
         }
 
         void TapGestureRecognizer_Tapped_1(System.Object sender, System.EventArgs e)

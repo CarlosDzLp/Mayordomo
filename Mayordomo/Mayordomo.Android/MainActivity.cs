@@ -1,17 +1,14 @@
-﻿using System;
-
+﻿
+using Android;
 using Android.App;
 using Android.Content.PM;
+using Android.OS;
 using Android.Runtime;
 using Android.Views;
-using Android.Widget;
-using Android.OS;
-using Plugin.CurrentActivity;
+using AndroidX.Core.App;
 using FormsToolkit;
 using Mayordomo.Helpers;
-using AndroidX.Core.App;
-using Android;
-using Lottie.Forms.Droid;
+using Plugin.CurrentActivity;
 
 namespace Mayordomo.Droid
 {
@@ -24,24 +21,23 @@ namespace Mayordomo.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
-            Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
-            AnimationViewRenderer.Init();
+            Rg.Plugins.Popup.Popup.Init(this);
             LoadApplication(new App());
-            MessagingService.Current.Subscribe<MessageKeys>("StatusBar", (args, sender) =>
-            {
-                if (sender.StatusBarTransparent)
-                {
-                    setLightStatusBar(this, Android.Graphics.Color.White);
-                }
-                else
-                {
-                    ClearLightStatusBar(this, sender.ColorHex);
-                }
-            });
+            Window.SetStatusBarColor(Android.Graphics.Color.Black);
+            //MessagingService.Current.Subscribe<MessageKeys>("StatusBar", (args, sender) =>
+            //{
+            //    if (sender.StatusBarTransparent)
+            //    {
+            //        setLightStatusBar(this, Android.Graphics.Color.White);
+            //    }
+            //    else
+            //    {
+            //        ClearLightStatusBar(this, sender.ColorHex);
+            //    }
+            //});
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
