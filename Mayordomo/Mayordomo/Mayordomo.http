@@ -1,0 +1,6 @@
+@Mayordomo_HostAddress = http://localhost:5298
+
+GET {{Mayordomo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

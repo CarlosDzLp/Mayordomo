@@ -1,0 +1,12 @@
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\Mayordomo.exe
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\dotnet-tools.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\Mayordomo.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\Mayordomo.deps.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\Mayordomo.runtimeconfig.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\Mayordomo.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
