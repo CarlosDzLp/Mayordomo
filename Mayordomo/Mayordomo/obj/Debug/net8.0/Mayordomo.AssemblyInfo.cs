@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mayordomo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bb74fbef9387d543aca89c1cd13711563f7796b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3aa005911003aaa893ab555bc9f1b5f6790521e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mayordomo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mayordomo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
