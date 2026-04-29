@@ -1,3 +1,27 @@
 <Solution>
-  <Project Path="Mayordomo/Mayordomo.csproj" />
+  <Folder Name="/1.-Client/">
+    <Project Path="Mayordomo/Mayordomo.csproj" />
+  </Folder>
+  <Folder Name="/2.-Application/">
+    <Project Path="Mayordomo.Application.Dto/Mayordomo.Application.Dto.csproj" Id="457dca47-ed82-4519-83cf-454592ac615f" />
+    <Project Path="Mayordomo.Application.Interface/Mayordomo.Application.Interface.csproj" Id="98542f6d-2a9e-4af8-a655-c96bc8425833" />
+    <Project Path="Mayordomo.Application.Main/Mayordomo.Application.Main.csproj" Id="57b31b04-b76c-41df-b035-ef9fd7d5d63d" />
+  </Folder>
+  <Folder Name="/3.-Domain/">
+    <Project Path="Mayordomo.Domain.Core/Mayordomo.Domain.Core.csproj" Id="cc00d859-9635-44e4-a708-226c9a65c9d8" />
+    <Project Path="Mayordomo.Domain.Entity/Mayordomo.Domain.Entity.csproj" Id="141e241c-ca26-47a9-b015-a416d9c37f4f" />
+    <Project Path="Mayordomo.Domain.Interface/Mayordomo.Domain.Interface.csproj" Id="9ef3e10b-53e6-4d77-b6f8-e8c2045a3bc6" />
+  </Folder>
+  <Folder Name="/4.-Infrastructure/">
+    <Project Path="Mayordomo.Infrastructure.Data/Mayordomo.Infrastructure.Data.csproj" Id="8096cbc7-0ede-4e10-b8e1-7f7a6a8d27c8" />
+    <Project Path="Mayordomo.Infrastructure.Main/Mayordomo.Infrastructure.Main.csproj" Id="763f6765-399d-40c6-8d0d-4c82b85fba47" />
+    <Project Path="Mayordomo.Infrastructure.Persistence/Mayordomo.Infrastructure.Persistence.csproj" Id="77397432-4dfc-48b7-b701-de306d22fc1b" />
+    <Project Path="Mayordomo.Infrastructure.Repository/Mayordomo.Infrastructure.Repository.csproj" Id="db7e0145-4bc7-4e22-9d27-b2a2b3f4b087" />
+  </Folder>
+  <Folder Name="/5.-Transversal/">
+    <Project Path="Mayordomo.Transversal.Common/Mayordomo.Transversal.Common.csproj" Id="2d1b6f2a-9c40-4401-824c-ff25f6be1de8" />
+    <Project Path="Mayordomo.Transversal.Email/Mayordomo.Transversal.Email.csproj" Id="ad2680f2-79a0-4f06-a0b8-9a79a96fa28e" />
+    <Project Path="Mayordomo.Transversal.Logging/Mayordomo.Transversal.Logging.csproj" Id="8c2a9f61-f0c7-4a2c-889d-4611596f25b1" />
+    <Project Path="Mayordomo.Transversal.Resources/Mayordomo.Transversal.Resources.csproj" Id="05028a04-4cbe-40e9-ac12-ae4f171b9adb" />
+  </Folder>
 </Solution>
