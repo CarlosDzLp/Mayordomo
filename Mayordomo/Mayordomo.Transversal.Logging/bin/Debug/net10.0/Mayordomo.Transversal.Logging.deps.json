@@ -1,0 +1,116 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Mayordomo.Transversal.Logging/1.0.0": {
+        "dependencies": {
+          "NLog": "6.1.2",
+          "NLog.Database": "6.0.3",
+          "NLog.Web": "6.1.2",
+          "NLog.Web.AspNetCore": "6.1.2"
+        },
+        "runtime": {
+          "Mayordomo.Transversal.Logging.dll": {}
+        }
+      },
+      "NLog/6.1.2": {
+        "runtime": {
+          "lib/netstandard2.1/NLog.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.2.5163"
+          }
+        }
+      },
+      "NLog.Database/6.0.3": {
+        "dependencies": {
+          "NLog": "6.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/NLog.Database.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.3.4402"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/6.1.2": {
+        "dependencies": {
+          "NLog": "6.1.2"
+        },
+        "runtime": {
+          "lib/net10.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.2.810"
+          }
+        }
+      },
+      "NLog.Web/6.1.2": {
+        "dependencies": {
+          "NLog": "6.1.2"
+        },
+        "runtime": {
+          "lib/net46/NLog.Web.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.2.1383"
+          }
+        }
+      },
+      "NLog.Web.AspNetCore/6.1.2": {
+        "dependencies": {
+          "NLog.Extensions.Logging": "6.1.2"
+        },
+        "runtime": {
+          "lib/net10.0/NLog.Web.AspNetCore.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.2.1383"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mayordomo.Transversal.Logging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NLog/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-y/3o6RVhHHeAMDaUdETeEtisYyypZApxeKd3k8HIH4IdqFzJNF5sXuJ07hNtAq6hLMup+yh3zuTckpFJqucOrw==",
+      "path": "nlog/6.1.2",
+      "hashPath": "nlog.6.1.2.nupkg.sha512"
+    },
+    "NLog.Database/6.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uMzSeSQbjHjAG+zF6E7DudXyLhyxNObBtHkyQE+IoLudqadKR1xojGsk9z02fWNlcyvCb3odkPh7Cf71eBi0/Q==",
+      "path": "nlog.database/6.0.3",
+      "hashPath": "nlog.database.6.0.3.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CDak9fN3yqDrmFth5OX/8WpRdEhHOHDK9O4Lej4oWG0r9MygEKfwZXgl1F5ixSnz0Sk3aW/3a/irjtttJUGDDw==",
+      "path": "nlog.extensions.logging/6.1.2",
+      "hashPath": "nlog.extensions.logging.6.1.2.nupkg.sha512"
+    },
+    "NLog.Web/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YixLYRJCq01nt2qoTRo6QrtXZKcbag0e3vinftXHJCuqfswEP5LM3kn2JyySMyeiZIjG4K1BNPEg/boqOe142g==",
+      "path": "nlog.web/6.1.2",
+      "hashPath": "nlog.web.6.1.2.nupkg.sha512"
+    },
+    "NLog.Web.AspNetCore/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PLXSRq7SYKhneMMd7+Ds4/gOVg++CDNpdN67ke6gp837aW4e70aQWuhMFHVL4YnFpO1UL+5QGEHP4w9wKZfwtg==",
+      "path": "nlog.web.aspnetcore/6.1.2",
+      "hashPath": "nlog.web.aspnetcore.6.1.2.nupkg.sha512"
+    }
+  }
+}

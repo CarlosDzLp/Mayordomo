@@ -1,0 +1,16 @@
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\bin\Debug\net10.0\Mayordomo.Transversal.Email.deps.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\bin\Debug\net10.0\Mayordomo.Transversal.Email.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\bin\Debug\net10.0\Mayordomo.Transversal.Email.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\obj\Debug\net10.0\Mayordomo.Transversal.Email.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\obj\Debug\net10.0\Mayordomo.Transversal.Email.AssemblyInfoInputs.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\obj\Debug\net10.0\Mayordomo.Transversal.Email.AssemblyInfo.cs
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\obj\Debug\net10.0\Mayordomo.Transversal.Email.csproj.CoreCompileInputs.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\obj\Debug\net10.0\Mayordomo.Transversal.Email.sourcelink.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\obj\Debug\net10.0\Mayordomo.Transversal.Email.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\obj\Debug\net10.0\refint\Mayordomo.Transversal.Email.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\obj\Debug\net10.0\Mayordomo.Transversal.Email.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\obj\Debug\net10.0\ref\Mayordomo.Transversal.Email.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\obj\Debug\net10.0\Mayordomo.Transversal.Email.csproj.AssemblyReference.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\bin\Debug\net10.0\Mayordomo.Transversal.Logging.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\bin\Debug\net10.0\Mayordomo.Transversal.Logging.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Email\obj\Debug\net10.0\Mayordom.73E98493.Up2Date

@@ -1,0 +1,13 @@
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\obj\Debug\net10.0\Mayordomo.Transversal.Mapster.csproj.AssemblyReference.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\obj\Debug\net10.0\Mayordomo.Transversal.Mapster.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\obj\Debug\net10.0\Mayordomo.Transversal.Mapster.AssemblyInfoInputs.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\obj\Debug\net10.0\Mayordomo.Transversal.Mapster.AssemblyInfo.cs
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\obj\Debug\net10.0\Mayordomo.Transversal.Mapster.csproj.CoreCompileInputs.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\obj\Debug\net10.0\Mayordomo.Transversal.Mapster.sourcelink.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\bin\Debug\net10.0\Mayordomo.Transversal.Mapster.deps.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\bin\Debug\net10.0\Mayordomo.Transversal.Mapster.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\bin\Debug\net10.0\Mayordomo.Transversal.Mapster.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\obj\Debug\net10.0\Mayordomo.Transversal.Mapster.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\obj\Debug\net10.0\refint\Mayordomo.Transversal.Mapster.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\obj\Debug\net10.0\Mayordomo.Transversal.Mapster.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Mapster\obj\Debug\net10.0\ref\Mayordomo.Transversal.Mapster.dll

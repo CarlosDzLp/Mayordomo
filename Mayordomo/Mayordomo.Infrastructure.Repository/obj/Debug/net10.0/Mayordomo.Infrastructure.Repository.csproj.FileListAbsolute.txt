@@ -1,0 +1,12 @@
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\bin\Debug\net10.0\Mayordomo.Infrastructure.Repository.deps.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\bin\Debug\net10.0\Mayordomo.Infrastructure.Repository.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\bin\Debug\net10.0\Mayordomo.Infrastructure.Repository.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\obj\Debug\net10.0\Mayordomo.Infrastructure.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\obj\Debug\net10.0\Mayordomo.Infrastructure.Repository.AssemblyInfoInputs.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\obj\Debug\net10.0\Mayordomo.Infrastructure.Repository.AssemblyInfo.cs
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\obj\Debug\net10.0\Mayordomo.Infrastructure.Repository.csproj.CoreCompileInputs.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\obj\Debug\net10.0\Mayordomo.Infrastructure.Repository.sourcelink.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\obj\Debug\net10.0\Mayordomo.Infrastructure.Repository.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\obj\Debug\net10.0\refint\Mayordomo.Infrastructure.Repository.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\obj\Debug\net10.0\Mayordomo.Infrastructure.Repository.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Infrastructure.Repository\obj\Debug\net10.0\ref\Mayordomo.Infrastructure.Repository.dll

@@ -1,0 +1,13 @@
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\bin\Debug\net10.0\Mayordomo.Transversal.Logging.deps.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\bin\Debug\net10.0\Mayordomo.Transversal.Logging.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\bin\Debug\net10.0\Mayordomo.Transversal.Logging.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\obj\Debug\net10.0\Mayordomo.Transversal.Logging.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\obj\Debug\net10.0\Mayordomo.Transversal.Logging.AssemblyInfoInputs.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\obj\Debug\net10.0\Mayordomo.Transversal.Logging.AssemblyInfo.cs
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\obj\Debug\net10.0\Mayordomo.Transversal.Logging.csproj.CoreCompileInputs.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\obj\Debug\net10.0\Mayordomo.Transversal.Logging.sourcelink.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\obj\Debug\net10.0\Mayordomo.Transversal.Logging.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\obj\Debug\net10.0\refint\Mayordomo.Transversal.Logging.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\obj\Debug\net10.0\Mayordomo.Transversal.Logging.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\obj\Debug\net10.0\ref\Mayordomo.Transversal.Logging.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Transversal.Logging\obj\Debug\net10.0\Mayordomo.Transversal.Logging.csproj.AssemblyReference.cache

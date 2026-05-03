@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "czOYDP1p0eA=",
+  "success": true,
+  "projectFilePath": "C:\\PROYECTOS\\Mayordomo\\Mayordomo\\Mayordomo.Transversal.Validator\\Mayordomo.Transversal.Validator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Diaz\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.0\\microsoft.aspnetcore.http.extensions.2.3.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.localization\\2.3.9\\microsoft.aspnetcore.localization.2.3.9.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.7\\microsoft.extensions.dependencyinjection.abstractions.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.localization\\10.0.7\\microsoft.extensions.localization.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\10.0.7\\microsoft.extensions.localization.abstractions.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.7\\microsoft.extensions.logging.abstractions.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.options\\10.0.7\\microsoft.extensions.options.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.7\\microsoft.extensions.primitives.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

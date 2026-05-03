@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bncf+WX+9Ik=",
+  "success": true,
+  "projectFilePath": "C:\\PROYECTOS\\Mayordomo\\Mayordomo\\Mayordomo.Transversal.Mapster\\Mayordomo.Transversal.Mapster.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.7\\microsoft.extensions.dependencyinjection.abstractions.10.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

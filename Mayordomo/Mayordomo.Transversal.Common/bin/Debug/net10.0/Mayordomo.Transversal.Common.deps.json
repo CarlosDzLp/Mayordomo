@@ -1,0 +1,389 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Mayordomo.Transversal.Common/1.0.0": {
+        "dependencies": {
+          "Mayordomo.Transversal.Email": "1.0.0",
+          "Mayordomo.Transversal.Logging": "1.0.0",
+          "Mayordomo.Transversal.Mapster": "1.0.0",
+          "Mayordomo.Transversal.Resources": "1.0.0",
+          "Mayordomo.Transversal.Validator": "1.0.0",
+          "Microsoft.AspNetCore.WebUtilities": "10.0.7",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7"
+        },
+        "runtime": {
+          "Mayordomo.Transversal.Common.dll": {}
+        }
+      },
+      "FluentValidation/12.1.1": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.1.1.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.WebUtilities/10.0.7": {
+        "dependencies": {
+          "Microsoft.Net.Http.Headers": "10.0.7"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.WebUtilities.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/10.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "10.0.7"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.7": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization/10.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
+          "Microsoft.Extensions.Localization.Abstractions": "10.0.7",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
+          "Microsoft.Extensions.Options": "10.0.7"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Localization.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/10.0.7": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/10.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/10.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
+          "Microsoft.Extensions.Primitives": "10.0.7"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/10.0.7": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Net.Http.Headers/10.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "10.0.7"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Net.Http.Headers.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "NLog/6.1.2": {
+        "runtime": {
+          "lib/netstandard2.1/NLog.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.2.5163"
+          }
+        }
+      },
+      "NLog.Database/6.0.3": {
+        "dependencies": {
+          "NLog": "6.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/NLog.Database.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.3.4402"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/6.1.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
+          "NLog": "6.1.2"
+        },
+        "runtime": {
+          "lib/net10.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.2.810"
+          }
+        }
+      },
+      "NLog.Web/6.1.2": {
+        "dependencies": {
+          "NLog": "6.1.2"
+        },
+        "runtime": {
+          "lib/net46/NLog.Web.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.2.1383"
+          }
+        }
+      },
+      "NLog.Web.AspNetCore/6.1.2": {
+        "dependencies": {
+          "NLog.Extensions.Logging": "6.1.2"
+        },
+        "runtime": {
+          "lib/net10.0/NLog.Web.AspNetCore.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.2.1383"
+          }
+        }
+      },
+      "Mayordomo.Transversal.Email/1.0.0": {
+        "dependencies": {
+          "Mayordomo.Transversal.Logging": "1.0.0",
+          "Microsoft.Extensions.Options": "10.0.7"
+        },
+        "runtime": {
+          "Mayordomo.Transversal.Email.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mayordomo.Transversal.Logging/1.0.0": {
+        "dependencies": {
+          "NLog": "6.1.2",
+          "NLog.Database": "6.0.3",
+          "NLog.Web": "6.1.2",
+          "NLog.Web.AspNetCore": "6.1.2"
+        },
+        "runtime": {
+          "Mayordomo.Transversal.Logging.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mayordomo.Transversal.Mapster/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7"
+        },
+        "runtime": {
+          "Mayordomo.Transversal.Mapster.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mayordomo.Transversal.Resources/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
+          "Microsoft.Extensions.Localization": "10.0.7"
+        },
+        "runtime": {
+          "Mayordomo.Transversal.Resources.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "resources": {
+          "en-US/Mayordomo.Transversal.Resources.resources.dll": {
+            "locale": "en-US"
+          },
+          "es-MX/Mayordomo.Transversal.Resources.resources.dll": {
+            "locale": "es-MX"
+          }
+        }
+      },
+      "Mayordomo.Transversal.Validator/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "12.1.1",
+          "Mayordomo.Transversal.Resources": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
+          "Microsoft.Extensions.Localization.Abstractions": "10.0.7"
+        },
+        "runtime": {
+          "Mayordomo.Transversal.Validator.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mayordomo.Transversal.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentValidation/12.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EPpkIe1yh1a0OXyC100oOA8WMbZvqUu5plwhvYcb7oSELfyUZzfxV48BLhvs3kKo4NwG7MGLNgy1RJiYtT8Dpw==",
+      "path": "fluentvalidation/12.1.1",
+      "hashPath": "fluentvalidation.12.1.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.WebUtilities/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IE0L32/AE1XCvxJaYl//qxnZcm/Hjc3CD1TJDIXbGUvdCh7HftNUIraCNGnNZ7F4XVL//pQEYnem52w+AXAMIg==",
+      "path": "microsoft.aspnetcore.webutilities/10.0.7",
+      "hashPath": "microsoft.aspnetcore.webutilities.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t56nEgvECcyLPojZIUFWJknQQDAbgfTf9J+QMYJE1YYvVgz69vN6B/AKL8Grvj3Lcnp8kTpNqwmwFhb3YLJmtQ==",
+      "path": "microsoft.extensions.configuration.abstractions/10.0.7",
+      "hashPath": "microsoft.extensions.configuration.abstractions.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z6mfFEaFcwCfSboxJwOLfu7/31npCY9q70WUamHW/vRQhDvBKOT4Vf9YkZj5J6hLvJpb0oDEYfHunQZj0xxvKw==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/10.0.7",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Localization/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xUtyqnk0KSTrX1VZ7z++UlNcVqUQAlKgg2/NqTxmQbW9A26Ia3Zvkd1pIX71koue5F8FtV5pCZqsOlJOycvxMA==",
+      "path": "microsoft.extensions.localization/10.0.7",
+      "hashPath": "microsoft.extensions.localization.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Localization.Abstractions/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UziyuPCVpRb0PJALYU3enqnYVvyIpdOpfe+DQca81aii1iQTeuxCroaCcOwJpzWUdKBusK9W/9s2G8Zrn+jIXQ==",
+      "path": "microsoft.extensions.localization.abstractions/10.0.7",
+      "hashPath": "microsoft.extensions.localization.abstractions.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tIEcQ2gvERrH2KiCjdsVcHGhXt9lIsuDStfOIeZWr7/fP8IXhGiYfx0/80PNI7WPO2IYuFtlZLSlnTS8+/Mchw==",
+      "path": "microsoft.extensions.logging.abstractions/10.0.7",
+      "hashPath": "microsoft.extensions.logging.abstractions.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-00SHUGTh2jSMvIr6x9Xwd2nE+B5/qFCO/9hDwUDhJsjYRDlADmaBZ7tqehXzBDsfjHSXJzuRHJzPYPPjphBQ7Q==",
+      "path": "microsoft.extensions.options/10.0.7",
+      "hashPath": "microsoft.extensions.options.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D5M0Jr551iTgwkZMN9rm0pSkgNLj5quUWQUmQPMZh7k/bnvZTnXRGfE2KuvXf1EEjt/ofD9yw9IumpgdP9QCnw==",
+      "path": "microsoft.extensions.primitives/10.0.7",
+      "hashPath": "microsoft.extensions.primitives.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Net.Http.Headers/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p87EodQmWe5j5y3tETgjVrZ7KYHVEekdVVHKAdZBu3zS2VY7ABd8yFIVpZztE6xNcwikcYHuek2i2c41SLd6kw==",
+      "path": "microsoft.net.http.headers/10.0.7",
+      "hashPath": "microsoft.net.http.headers.10.0.7.nupkg.sha512"
+    },
+    "NLog/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-y/3o6RVhHHeAMDaUdETeEtisYyypZApxeKd3k8HIH4IdqFzJNF5sXuJ07hNtAq6hLMup+yh3zuTckpFJqucOrw==",
+      "path": "nlog/6.1.2",
+      "hashPath": "nlog.6.1.2.nupkg.sha512"
+    },
+    "NLog.Database/6.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uMzSeSQbjHjAG+zF6E7DudXyLhyxNObBtHkyQE+IoLudqadKR1xojGsk9z02fWNlcyvCb3odkPh7Cf71eBi0/Q==",
+      "path": "nlog.database/6.0.3",
+      "hashPath": "nlog.database.6.0.3.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CDak9fN3yqDrmFth5OX/8WpRdEhHOHDK9O4Lej4oWG0r9MygEKfwZXgl1F5ixSnz0Sk3aW/3a/irjtttJUGDDw==",
+      "path": "nlog.extensions.logging/6.1.2",
+      "hashPath": "nlog.extensions.logging.6.1.2.nupkg.sha512"
+    },
+    "NLog.Web/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YixLYRJCq01nt2qoTRo6QrtXZKcbag0e3vinftXHJCuqfswEP5LM3kn2JyySMyeiZIjG4K1BNPEg/boqOe142g==",
+      "path": "nlog.web/6.1.2",
+      "hashPath": "nlog.web.6.1.2.nupkg.sha512"
+    },
+    "NLog.Web.AspNetCore/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PLXSRq7SYKhneMMd7+Ds4/gOVg++CDNpdN67ke6gp837aW4e70aQWuhMFHVL4YnFpO1UL+5QGEHP4w9wKZfwtg==",
+      "path": "nlog.web.aspnetcore/6.1.2",
+      "hashPath": "nlog.web.aspnetcore.6.1.2.nupkg.sha512"
+    },
+    "Mayordomo.Transversal.Email/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mayordomo.Transversal.Logging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mayordomo.Transversal.Mapster/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mayordomo.Transversal.Resources/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mayordomo.Transversal.Validator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

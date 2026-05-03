@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mayordomo.Transversal.Resources")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96d4e45fc0643f39173c506e9156ac85c531064e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d60853e3ffd69d9dde79764a3c257988635d15e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mayordomo.Transversal.Resources")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mayordomo.Transversal.Resources")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,57 @@
 {
   "version": 2,
-  "dgSpecHash": "o5N8K7pdRh4=",
+  "dgSpecHash": "jnSTaTSTCMQ=",
   "success": true,
   "projectFilePath": "C:\\PROYECTOS\\Mayordomo\\Mayordomo\\Mayordomo.Infrastructure.Data\\Mayordomo.Infrastructure.Data.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Diaz\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.hosting\\2.3.9\\microsoft.aspnetcore.hosting.2.3.9.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.3.0\\microsoft.aspnetcore.hosting.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.3.0\\microsoft.aspnetcore.hosting.server.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.http\\2.3.0\\microsoft.aspnetcore.http.2.3.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.0\\microsoft.aspnetcore.http.extensions.2.3.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.localization\\2.3.9\\microsoft.aspnetcore.localization.2.3.9.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\10.0.7\\microsoft.aspnetcore.webutilities.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.7\\microsoft.extensions.configuration.abstractions.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.configuration.environmentvariables\\8.0.0\\microsoft.extensions.configuration.environmentvariables.8.0.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\8.0.1\\microsoft.extensions.configuration.fileextensions.8.0.1.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.0\\microsoft.extensions.dependencyinjection.10.0.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.7\\microsoft.extensions.dependencyinjection.abstractions.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\8.0.1\\microsoft.extensions.diagnostics.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\8.0.0\\microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\8.0.0\\microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.1\\microsoft.extensions.hosting.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.localization\\10.0.7\\microsoft.extensions.localization.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\10.0.7\\microsoft.extensions.localization.abstractions.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.logging\\10.0.0\\microsoft.extensions.logging.10.0.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.7\\microsoft.extensions.logging.abstractions.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.logging.debug\\8.0.1\\microsoft.extensions.logging.debug.8.0.1.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.objectpool\\8.0.11\\microsoft.extensions.objectpool.8.0.11.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.options\\10.0.7\\microsoft.extensions.options.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.7\\microsoft.extensions.primitives.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.net.http.headers\\10.0.7\\microsoft.net.http.headers.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\nlog\\6.1.2\\nlog.6.1.2.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\nlog.database\\6.0.3\\nlog.database.6.0.3.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\nlog.extensions.logging\\6.1.2\\nlog.extensions.logging.6.1.2.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\nlog.web\\6.1.2\\nlog.web.6.1.2.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\nlog.web.aspnetcore\\6.1.2\\nlog.web.aspnetcore.6.1.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'NLog.Web 6.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\PROYECTOS\\Mayordomo\\Mayordomo\\Mayordomo.Infrastructure.Data\\Mayordomo.Infrastructure.Data.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\PROYECTOS\\Mayordomo\\Mayordomo\\Mayordomo.Infrastructure.Data\\Mayordomo.Infrastructure.Data.csproj",
+      "libraryId": "NLog.Web",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

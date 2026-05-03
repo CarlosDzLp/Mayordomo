@@ -1,0 +1,12 @@
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\bin\Debug\net10.0\Mayordomo.Application.Dto.deps.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\bin\Debug\net10.0\Mayordomo.Application.Dto.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\bin\Debug\net10.0\Mayordomo.Application.Dto.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\obj\Debug\net10.0\Mayordomo.Application.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\obj\Debug\net10.0\Mayordomo.Application.Dto.AssemblyInfoInputs.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\obj\Debug\net10.0\Mayordomo.Application.Dto.AssemblyInfo.cs
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\obj\Debug\net10.0\Mayordomo.Application.Dto.csproj.CoreCompileInputs.cache
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\obj\Debug\net10.0\Mayordomo.Application.Dto.sourcelink.json
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\obj\Debug\net10.0\Mayordomo.Application.Dto.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\obj\Debug\net10.0\refint\Mayordomo.Application.Dto.dll
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\obj\Debug\net10.0\Mayordomo.Application.Dto.pdb
+C:\PROYECTOS\Mayordomo\Mayordomo\Mayordomo.Application.Dto\obj\Debug\net10.0\ref\Mayordomo.Application.Dto.dll

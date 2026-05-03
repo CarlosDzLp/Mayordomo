@@ -22,6 +22,10 @@
     <Project Path="Mayordomo.Transversal.Common/Mayordomo.Transversal.Common.csproj" Id="2d1b6f2a-9c40-4401-824c-ff25f6be1de8" />
     <Project Path="Mayordomo.Transversal.Email/Mayordomo.Transversal.Email.csproj" Id="ad2680f2-79a0-4f06-a0b8-9a79a96fa28e" />
     <Project Path="Mayordomo.Transversal.Logging/Mayordomo.Transversal.Logging.csproj" Id="8c2a9f61-f0c7-4a2c-889d-4611596f25b1" />
+    <Project Path="Mayordomo.Transversal.Mapster/Mayordomo.Transversal.Mapster.csproj" Id="15d4eb9b-2037-4d00-8a3a-87e72265ce24" />
+    <Project Path="Mayordomo.Transversal.Middleware/Mayordomo.Transversal.Middleware.csproj" Id="3b5663d3-3de1-46af-9a2e-23d44b1b3ce4" />
     <Project Path="Mayordomo.Transversal.Resources/Mayordomo.Transversal.Resources.csproj" Id="05028a04-4cbe-40e9-ac12-ae4f171b9adb" />
+    <Project Path="Mayordomo.Transversal.Swagger/Mayordomo.Transversal.Swagger.csproj" Id="bc27851b-7278-49ce-a67a-0328188f3ca4" />
+    <Project Path="Mayordomo.Transversal.Validator/Mayordomo.Transversal.Validator.csproj" Id="394ba089-f049-48a4-8e93-63a2d24e4715" />
   </Folder>
 </Solution>

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "0T2dQsER2i8=",
+  "dgSpecHash": "qg0JRN551VA=",
   "success": true,
   "projectFilePath": "C:\\PROYECTOS\\Mayordomo\\Mayordomo\\Mayordomo.Application.Main\\Mayordomo.Application.Main.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.7\\microsoft.extensions.configuration.abstractions.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.7\\microsoft.extensions.dependencyinjection.abstractions.10.0.7.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.7\\microsoft.extensions.primitives.10.0.7.nupkg.sha512"
+  ],
   "logs": []
 }
